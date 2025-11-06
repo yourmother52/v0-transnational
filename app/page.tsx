@@ -32,7 +32,7 @@ export default function HomePage() {
             url: "https://transnationalhealth.org",
             name: "Transnational Health - Compassionate HRT at Home",
             description:
-              "Providing accessible, safe, affirming hormone replacement therapy (HRT) services for trans and gender divergent people through licensed healthcare providers.",
+              "Providing accessible, safe, affirming hormone replacement therapy (HRT) services for trans, nonbinary, and gender divergent folx through licensed healthcare providers. Offering testosterone, estrogen, and spironolactone with heart-centered, queer-affirming care.",
             isPartOf: {
               "@id": "https://transnationalhealth.org/#website",
             },
@@ -87,8 +87,8 @@ export default function HomePage() {
                     <span className="text-red-500">Compassionate HRT at Home</span>
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
-                    Providing accessible, safe, affirming HRT with licensed healthcare providers. Your journey to
-                    getting HRT at home starts here.
+                    Providing accessible, safe, affirming HRT for trans folx and gender divergent people with licensed
+                    healthcare providers. Your journey to getting HRT at home starts here.
                     <br />
                     <strong>Launching November 30, 2025.</strong>
                   </p>
@@ -122,8 +122,9 @@ export default function HomePage() {
                     What We Do
                   </h2>
                   <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    We provide comprehensive hormone replacement therapy services specifically designed for trans and
-                    gender divergent people, delivered through partnerships with licensed healthcare providers.
+                    We provide comprehensive hormone replacement therapy services specifically designed for trans,
+                    nonbinary, and gender divergent people, delivered through partnerships with licensed queer-affirming
+                    healthcare providers.
                   </p>
                 </div>
               </div>
@@ -140,11 +141,16 @@ export default function HomePage() {
                     <CardContent className="space-y-4">
                       <div className="space-y-2">
                         <h3 className="font-semibold text-gray-900">Estrogen-based Regimens</h3>
-                        <p className="text-sm text-gray-600">Estrogen, anti-androgen, and complementary therapies.</p>
+                        <p className="text-sm text-gray-600">
+                          Estrogen, spironolactone (anti-androgen), and complementary therapies.
+                        </p>
                       </div>
                       <div className="space-y-2">
                         <h3 className="font-semibold text-gray-900">Testosterone-based Regimens</h3>
-                        <p className="text-sm text-gray-600">Testosterone and complementary therapies.</p>
+                        <p className="text-sm text-gray-600">
+                          Testosterone therapy and complementary treatments to support your goals including voice
+                          changes, muscle development, and clitoral growth.
+                        </p>
                       </div>
                       <div className="space-y-2">
                         <h3 className="font-semibold text-gray-900">Customized Regimens</h3>
@@ -286,9 +292,9 @@ export default function HomePage() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-gray-600">
-                        We understand the unique challenges faced by the trans and gender divergent community and are
-                        committed to providing affirming, respectful, and accessible healthcare services with cultural
-                        competency.
+                        We understand the unique challenges faced by trans folx and the gender divergent community and
+                        are committed to providing affirming, respectful, and accessible queer healthcare services with
+                        cultural competency.
                       </p>
                     </CardContent>
                   </Card>

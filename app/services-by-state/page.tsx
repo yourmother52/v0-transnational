@@ -11,20 +11,6 @@ import { Breadcrumbs } from "../components/breadcrumbs"
 export default function ServicesByStatePage() {
   const states = [
     {
-      name: "Louisiana",
-      slug: "louisiana",
-      description:
-        "Access compassionate HRT services in Louisiana through our telemedicine platform. We provide hormone replacement therapy for trans and gender divergent people across Louisiana including New Orleans, Baton Rouge, Shreveport, and Lafayette.",
-      keywords: "HRT Louisiana, hormone therapy Louisiana, transgender healthcare Louisiana, HRT New Orleans",
-    },
-    {
-      name: "Florida",
-      slug: "florida",
-      description:
-        "Comprehensive HRT services available throughout Florida via telehealth. Our licensed providers offer hormone replacement therapy to trans and gender divergent people in Miami, Tampa, Orlando, Jacksonville, and all Florida communities.",
-      keywords: "HRT Florida, hormone therapy Florida, transgender healthcare Florida, HRT Miami, HRT Tampa",
-    },
-    {
       name: "Alabama",
       slug: "alabama",
       description:
@@ -32,18 +18,11 @@ export default function ServicesByStatePage() {
       keywords: "HRT Alabama, hormone therapy Alabama, transgender healthcare Alabama, HRT Birmingham",
     },
     {
-      name: "Mississippi",
-      slug: "mississippi",
+      name: "Arkansas",
+      slug: "arkansas",
       description:
-        "Providing HRT services to trans and gender divergent people across Mississippi through our telemedicine platform. Access hormone replacement therapy in Jackson, Gulfport, Southaven, Hattiesburg, and throughout Mississippi.",
-      keywords: "HRT Mississippi, hormone therapy Mississippi, transgender healthcare Mississippi, HRT Jackson",
-    },
-    {
-      name: "Texas",
-      slug: "texas",
-      description:
-        "Comprehensive hormone replacement therapy services available throughout Texas. Our licensed healthcare providers offer HRT to trans and gender divergent people in Houston, Dallas, Austin, San Antonio, Fort Worth, and all Texas cities.",
-      keywords: "HRT Texas, hormone therapy Texas, transgender healthcare Texas, HRT Houston, HRT Dallas, HRT Austin",
+        "Comprehensive HRT services available throughout Arkansas via telehealth. Our licensed providers offer hormone replacement therapy to trans and gender divergent people in Little Rock, Fort Smith, Fayetteville, Springdale, and all Arkansas communities.",
+      keywords: "HRT Arkansas, hormone therapy Arkansas, transgender healthcare Arkansas, HRT Little Rock",
     },
     {
       name: "Idaho",
@@ -53,11 +32,40 @@ export default function ServicesByStatePage() {
       keywords: "HRT Idaho, hormone therapy Idaho, transgender healthcare Idaho, HRT Boise",
     },
     {
-      name: "Utah",
-      slug: "utah",
+      name: "Indiana",
+      slug: "indiana",
       description:
-        "Hormone replacement therapy services for trans and gender divergent people across Utah. Our licensed providers serve Salt Lake City, West Valley City, Provo, West Jordan, and all Utah communities with compassionate HRT care.",
-      keywords: "HRT Utah, hormone therapy Utah, transgender healthcare Utah, HRT Salt Lake City",
+        "Professional hormone replacement therapy services for trans and gender divergent people across Indiana. We serve Indianapolis, Fort Wayne, Evansville, South Bend, and all Indiana communities with compassionate HRT care.",
+      keywords: "HRT Indiana, hormone therapy Indiana, transgender healthcare Indiana, HRT Indianapolis",
+    },
+    {
+      name: "Louisiana",
+      slug: "louisiana",
+      description:
+        "Access compassionate HRT services in Louisiana through our telemedicine platform. We provide hormone replacement therapy for trans and gender divergent people across Louisiana including New Orleans, Baton Rouge, Shreveport, and Lafayette.",
+      keywords: "HRT Louisiana, hormone therapy Louisiana, transgender healthcare Louisiana, HRT New Orleans",
+    },
+    {
+      name: "Missouri",
+      slug: "missouri",
+      description:
+        "Accessible HRT services available throughout Missouri via telemedicine. We provide hormone replacement therapy to trans and gender divergent people in Kansas City, St. Louis, Springfield, Columbia, and across Missouri.",
+      keywords:
+        "HRT Missouri, hormone therapy Missouri, transgender healthcare Missouri, HRT Kansas City, HRT St. Louis",
+    },
+    {
+      name: "Montana",
+      slug: "montana",
+      description:
+        "Hormone replacement therapy services for trans and gender divergent people across Montana. Our licensed providers serve Billings, Missoula, Great Falls, Bozeman, and all Montana communities with expert HRT care.",
+      keywords: "HRT Montana, hormone therapy Montana, transgender healthcare Montana, HRT Billings, HRT Missoula",
+    },
+    {
+      name: "North Dakota",
+      slug: "north-dakota",
+      description:
+        "Providing HRT services to trans and gender divergent people across North Dakota through our telemedicine platform. Access hormone replacement therapy in Fargo, Bismarck, Grand Forks, Minot, and throughout North Dakota.",
+      keywords: "HRT North Dakota, hormone therapy North Dakota, transgender healthcare North Dakota, HRT Fargo",
     },
     {
       name: "Oklahoma",
@@ -65,6 +73,28 @@ export default function ServicesByStatePage() {
       description:
         "Accessible HRT services available throughout Oklahoma via telemedicine. We provide hormone replacement therapy to trans and gender divergent people in Oklahoma City, Tulsa, Norman, Broken Arrow, and across Oklahoma.",
       keywords: "HRT Oklahoma, hormone therapy Oklahoma, transgender healthcare Oklahoma, HRT Oklahoma City, HRT Tulsa",
+    },
+    {
+      name: "South Dakota",
+      slug: "south-dakota",
+      description:
+        "Comprehensive hormone replacement therapy services available throughout South Dakota. Our licensed healthcare providers offer HRT to trans and gender divergent people in Sioux Falls, Rapid City, Aberdeen, Brookings, and all South Dakota cities.",
+      keywords: "HRT South Dakota, hormone therapy South Dakota, transgender healthcare South Dakota, HRT Sioux Falls",
+    },
+    {
+      name: "Texas",
+      slug: "texas",
+      description:
+        "Comprehensive hormone replacement therapy services available throughout Texas. Our licensed healthcare providers offer HRT to trans and gender divergent people in Houston, Dallas, Austin, San Antonio, Fort Worth, and all Texas cities.",
+      keywords: "HRT Texas, hormone therapy Texas, transgender healthcare Texas, HRT Houston, HRT Dallas, HRT Austin",
+    },
+    {
+      name: "West Virginia",
+      slug: "west-virginia",
+      description:
+        "Access safe, affirming HRT services in West Virginia through our telehealth platform. We provide hormone replacement therapy for trans and gender divergent people in Charleston, Huntington, Morgantown, Parkersburg, and throughout West Virginia.",
+      keywords:
+        "HRT West Virginia, hormone therapy West Virginia, transgender healthcare West Virginia, HRT Charleston",
     },
   ]
 
@@ -79,7 +109,7 @@ export default function ServicesByStatePage() {
             "@type": "MedicalWebPage",
             name: "HRT Services by State - Hormone Replacement Therapy",
             description:
-              "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people across Louisiana, Florida, Alabama, Mississippi, Texas, Idaho, Utah, and Oklahoma.",
+              "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people across Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Texas, and West Virginia.",
             specialty: "Endocrinology",
             about: {
               "@type": "MedicalTherapy",
@@ -92,14 +122,18 @@ export default function ServicesByStatePage() {
               telephone: "+1-844-478-6337",
             },
             areaServed: [
-              { "@type": "State", name: "Louisiana" },
-              { "@type": "State", name: "Florida" },
               { "@type": "State", name: "Alabama" },
-              { "@type": "State", name: "Mississippi" },
-              { "@type": "State", name: "Texas" },
+              { "@type": "State", name: "Arkansas" },
               { "@type": "State", name: "Idaho" },
-              { "@type": "State", name: "Utah" },
+              { "@type": "State", name: "Indiana" },
+              { "@type": "State", name: "Louisiana" },
+              { "@type": "State", name: "Missouri" },
+              { "@type": "State", name: "Montana" },
+              { "@type": "State", name: "North Dakota" },
               { "@type": "State", name: "Oklahoma" },
+              { "@type": "State", name: "South Dakota" },
+              { "@type": "State", name: "Texas" },
+              { "@type": "State", name: "West Virginia" },
             ],
           }),
         }}
@@ -168,9 +202,10 @@ export default function ServicesByStatePage() {
                     <span className="text-red-500">HRT Services Across Multiple States</span>
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl leading-relaxed">
-                    Compassionate hormone replacement therapy for trans and gender divergent people in Louisiana,
-                    Florida, Alabama, Mississippi, Texas, Idaho, Utah, and Oklahoma. Licensed healthcare providers
-                    delivering safe, affirming HRT through telemedicine.
+                    Compassionate hormone replacement therapy for trans and gender divergent people in Alabama,
+                    Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Texas,
+                    and West Virginia. Licensed healthcare providers delivering safe, affirming HRT through
+                    telemedicine.
                   </p>
                   <div className="flex items-center justify-center gap-2 pt-4">
                     <Phone className="h-5 w-5 text-blue-600" />

@@ -11,28 +11,64 @@ import { Breadcrumbs } from "../components/breadcrumbs"
 export default function TestosteroneTherapyPage() {
   const states = [
     {
-      name: "Louisiana",
-      cities: ["New Orleans", "Baton Rouge", "Shreveport", "Lafayette", "Lake Charles"],
-      description:
-        "Professional testosterone replacement therapy services for men in Louisiana. Our licensed healthcare providers offer comprehensive TRT treatment plans to address low testosterone, low energy, reduced muscle mass, and other symptoms of testosterone deficiency.",
-    },
-    {
-      name: "Florida",
-      cities: ["Miami", "Tampa", "Orlando", "Jacksonville", "Tallahassee", "Fort Lauderdale", "West Palm Beach"],
-      description:
-        "Expert testosterone replacement therapy throughout Florida. We provide personalized TRT solutions to help Florida men combat low T symptoms including fatigue, decreased libido, weight gain, and hormonal imbalances.",
-    },
-    {
       name: "Alabama",
       cities: ["Birmingham", "Montgomery", "Mobile", "Huntsville", "Tuscaloosa"],
       description:
         "Specialized testosterone therapy services for men across Alabama. Our telemedicine platform connects you with experienced healthcare providers who specialize in male hormone optimization and testosterone replacement therapy.",
     },
     {
-      name: "Mississippi",
-      cities: ["Jackson", "Gulfport", "Southaven", "Hattiesburg", "Biloxi"],
+      name: "Arkansas",
+      cities: ["Little Rock", "Fort Smith", "Fayetteville", "Springdale", "Jonesboro"],
       description:
-        "Accessible testosterone replacement therapy for Mississippi men. We offer comprehensive TRT services to help manage low testosterone symptoms with personalized care from licensed medical professionals specializing in men's health.",
+        "Comprehensive testosterone replacement therapy for men throughout Arkansas. We provide personalized TRT solutions to help manage low testosterone symptoms with expert medical care and ongoing monitoring.",
+    },
+    {
+      name: "Idaho",
+      cities: ["Boise", "Meridian", "Nampa", "Idaho Falls", "Pocatello"],
+      description:
+        "Professional testosterone therapy services for Idaho men. We provide convenient telemedicine consultations and personalized TRT to help manage low testosterone symptoms and improve overall quality of life and vitality.",
+    },
+    {
+      name: "Indiana",
+      cities: ["Indianapolis", "Fort Wayne", "Evansville", "South Bend", "Carmel"],
+      description:
+        "Expert testosterone replacement therapy for men across Indiana. Our licensed providers offer comprehensive TRT treatment plans to address low energy, decreased libido, and other symptoms of testosterone deficiency.",
+    },
+    {
+      name: "Louisiana",
+      cities: ["New Orleans", "Baton Rouge", "Shreveport", "Lafayette", "Lake Charles"],
+      description:
+        "Professional testosterone replacement therapy services for men in Louisiana. Our licensed healthcare providers offer comprehensive TRT treatment plans to address low testosterone, low energy, reduced muscle mass, and other symptoms of testosterone deficiency.",
+    },
+    {
+      name: "Missouri",
+      cities: ["Kansas City", "St. Louis", "Springfield", "Columbia", "Independence"],
+      description:
+        "Professional testosterone therapy services for Missouri men. We offer accessible TRT through telemedicine to help manage low testosterone symptoms and optimize hormonal health.",
+    },
+    {
+      name: "Montana",
+      cities: ["Billings", "Missoula", "Great Falls", "Bozeman", "Helena"],
+      description:
+        "Accessible testosterone replacement therapy for men throughout Montana. Our licensed providers deliver personalized TRT solutions to help manage low energy, muscle loss, and other testosterone deficiency symptoms.",
+    },
+    {
+      name: "North Dakota",
+      cities: ["Fargo", "Bismarck", "Grand Forks", "Minot", "West Fargo"],
+      description:
+        "Specialized testosterone therapy services for North Dakota men. We provide expert TRT through telemedicine to help manage low testosterone symptoms with compassionate, professional medical care.",
+    },
+    {
+      name: "Oklahoma",
+      cities: ["Oklahoma City", "Tulsa", "Norman", "Broken Arrow", "Edmond"],
+      description:
+        "Expert testosterone therapy services across Oklahoma. We provide personalized TRT solutions to help men manage low testosterone symptoms and optimize hormonal balance through professional medical care and monitoring.",
+    },
+    {
+      name: "South Dakota",
+      cities: ["Sioux Falls", "Rapid City", "Aberdeen", "Brookings", "Watertown"],
+      description:
+        "Comprehensive testosterone replacement therapy for South Dakota men. Our healthcare providers offer evidence-based TRT treatments to address low energy, decreased muscle mass, and other low testosterone symptoms.",
     },
     {
       name: "Texas",
@@ -51,22 +87,10 @@ export default function TestosteroneTherapyPage() {
         "Leading testosterone replacement therapy services throughout Texas. Our healthcare providers offer customized TRT solutions for men experiencing low testosterone symptoms including low energy, reduced muscle mass, and decreased vitality.",
     },
     {
-      name: "Idaho",
-      cities: ["Boise", "Meridian", "Nampa", "Idaho Falls", "Pocatello"],
+      name: "West Virginia",
+      cities: ["Charleston", "Huntington", "Morgantown", "Parkersburg", "Wheeling"],
       description:
-        "Professional testosterone therapy services for Idaho men. We provide convenient telemedicine consultations and personalized TRT to help manage low testosterone symptoms and improve overall quality of life and vitality.",
-    },
-    {
-      name: "Utah",
-      cities: ["Salt Lake City", "West Valley City", "Provo", "West Jordan", "Orem"],
-      description:
-        "Comprehensive testosterone replacement therapy for men in Utah. Our licensed providers offer evidence-based TRT treatments to address low energy, decreased libido, muscle loss, and other testosterone deficiency symptoms.",
-    },
-    {
-      name: "Oklahoma",
-      cities: ["Oklahoma City", "Tulsa", "Norman", "Broken Arrow", "Edmond"],
-      description:
-        "Expert testosterone therapy services across Oklahoma. We provide personalized TRT solutions to help men manage low testosterone symptoms and optimize hormonal balance through professional medical care and monitoring.",
+        "Expert testosterone therapy services for West Virginia men. We provide personalized TRT through telemedicine to help manage low testosterone symptoms and restore hormonal balance.",
     },
   ]
 
@@ -104,9 +128,9 @@ export default function TestosteroneTherapyPage() {
                   <span className="text-red-500">Testosterone Replacement Therapy</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
-                  Professional testosterone replacement therapy (TRT) for men experiencing low testosterone, fatigue,
-                  decreased muscle mass, and reduced vitality. Licensed healthcare providers offering personalized
-                  hormone optimization.
+                  Professional testosterone replacement therapy (TRT) for men, trans folx, and nonbinary individuals
+                  experiencing low testosterone, fatigue, decreased muscle mass, and reduced vitality. Licensed
+                  healthcare providers offering personalized hormone optimization.
                 </p>
                 <p className="text-lg font-semibold text-blue-600">Launching November 30, 2025</p>
               </div>
@@ -241,6 +265,16 @@ export default function TestosteroneTherapyPage() {
                       <h3 className="font-semibold">Cognitive Decline</h3>
                       <p className="text-sm text-gray-600">
                         Support mental clarity, focus, and memory with testosterone optimization
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-semibold">Physical Changes & Development</h3>
+                      <p className="text-sm text-gray-600">
+                        Support voice deepening, facial hair growth, muscle development, and clitoral growth through
+                        testosterone therapy
                       </p>
                     </div>
                   </div>

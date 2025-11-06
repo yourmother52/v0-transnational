@@ -11,28 +11,64 @@ import { Breadcrumbs } from "../components/breadcrumbs"
 export default function MenopauseHRTPage() {
   const states = [
     {
-      name: "Louisiana",
-      cities: ["New Orleans", "Baton Rouge", "Shreveport", "Lafayette", "Lake Charles"],
-      description:
-        "Comprehensive menopause hormone replacement therapy services for women in Louisiana. Our licensed healthcare providers offer personalized HRT treatment plans to help manage hot flashes, night sweats, mood changes, and other menopause symptoms.",
-    },
-    {
-      name: "Florida",
-      cities: ["Miami", "Tampa", "Orlando", "Jacksonville", "Tallahassee", "Fort Lauderdale", "West Palm Beach"],
-      description:
-        "Expert menopause HRT services throughout Florida. We provide bioidentical hormone replacement therapy and traditional HRT options to help Florida women manage menopause symptoms including hot flashes, sleep disturbances, and hormonal imbalances.",
-    },
-    {
       name: "Alabama",
       cities: ["Birmingham", "Montgomery", "Mobile", "Huntsville", "Tuscaloosa"],
       description:
         "Professional menopause hormone therapy services for women across Alabama. Our telemedicine platform connects you with experienced healthcare providers who specialize in menopause management and hormone replacement therapy.",
     },
     {
-      name: "Mississippi",
-      cities: ["Jackson", "Gulfport", "Southaven", "Hattiesburg", "Biloxi"],
+      name: "Arkansas",
+      cities: ["Little Rock", "Fort Smith", "Fayetteville", "Springdale", "Jonesboro"],
       description:
-        "Accessible menopause HRT treatment for Mississippi women. We offer comprehensive hormone replacement therapy services to help manage perimenopause and menopause symptoms with personalized care from licensed medical professionals.",
+        "Comprehensive menopause HRT services for women throughout Arkansas. We provide personalized hormone replacement therapy to help manage hot flashes, night sweats, and other menopause symptoms with expert medical care.",
+    },
+    {
+      name: "Idaho",
+      cities: ["Boise", "Meridian", "Nampa", "Idaho Falls", "Pocatello"],
+      description:
+        "Specialized menopause HRT services for Idaho women. We provide convenient telemedicine consultations and personalized hormone replacement therapy to help manage menopause symptoms and improve quality of life.",
+    },
+    {
+      name: "Indiana",
+      cities: ["Indianapolis", "Fort Wayne", "Evansville", "South Bend", "Carmel"],
+      description:
+        "Expert menopause hormone replacement therapy for women across Indiana. Our licensed providers offer comprehensive HRT treatment plans to address hot flashes, mood changes, and hormonal imbalances during menopause.",
+    },
+    {
+      name: "Louisiana",
+      cities: ["New Orleans", "Baton Rouge", "Shreveport", "Lafayette", "Lake Charles"],
+      description:
+        "Comprehensive menopause hormone replacement therapy services for women in Louisiana. Our licensed healthcare providers offer personalized HRT treatment plans to help manage hot flashes, night sweats, mood changes, and other menopause symptoms.",
+    },
+    {
+      name: "Missouri",
+      cities: ["Kansas City", "St. Louis", "Springfield", "Columbia", "Independence"],
+      description:
+        "Professional menopause HRT services for Missouri women. We offer accessible hormone replacement therapy through telemedicine to help manage menopause symptoms and improve overall well-being.",
+    },
+    {
+      name: "Montana",
+      cities: ["Billings", "Missoula", "Great Falls", "Bozeman", "Helena"],
+      description:
+        "Accessible menopause hormone therapy for women throughout Montana. Our licensed providers deliver personalized HRT solutions to help manage hot flashes, sleep disturbances, and other menopause-related symptoms.",
+    },
+    {
+      name: "North Dakota",
+      cities: ["Fargo", "Bismarck", "Grand Forks", "Minot", "West Fargo"],
+      description:
+        "Specialized menopause HRT services for North Dakota women. We provide expert hormone replacement therapy through telemedicine to help manage menopause symptoms with compassionate, professional care.",
+    },
+    {
+      name: "Oklahoma",
+      cities: ["Oklahoma City", "Tulsa", "Norman", "Broken Arrow", "Edmond"],
+      description:
+        "Professional menopause HRT services across Oklahoma. We provide personalized hormone replacement therapy solutions to help women manage menopause symptoms and maintain hormonal balance through expert medical care.",
+    },
+    {
+      name: "South Dakota",
+      cities: ["Sioux Falls", "Rapid City", "Aberdeen", "Brookings", "Watertown"],
+      description:
+        "Comprehensive menopause hormone therapy for South Dakota women. Our healthcare providers offer evidence-based HRT treatments to address hot flashes, night sweats, and other menopause symptoms.",
     },
     {
       name: "Texas",
@@ -51,22 +87,10 @@ export default function MenopauseHRTPage() {
         "Leading menopause hormone replacement therapy services throughout Texas. Our healthcare providers offer customized HRT solutions for women experiencing menopause symptoms including hot flashes, mood swings, and hormonal changes.",
     },
     {
-      name: "Idaho",
-      cities: ["Boise", "Meridian", "Nampa", "Idaho Falls", "Pocatello"],
+      name: "West Virginia",
+      cities: ["Charleston", "Huntington", "Morgantown", "Parkersburg", "Wheeling"],
       description:
-        "Specialized menopause HRT services for Idaho women. We provide convenient telemedicine consultations and personalized hormone replacement therapy to help manage menopause symptoms and improve quality of life.",
-    },
-    {
-      name: "Utah",
-      cities: ["Salt Lake City", "West Valley City", "Provo", "West Jordan", "Orem"],
-      description:
-        "Comprehensive menopause hormone therapy for women in Utah. Our licensed providers offer evidence-based HRT treatments to address hot flashes, night sweats, mood changes, and other menopause-related symptoms.",
-    },
-    {
-      name: "Oklahoma",
-      cities: ["Oklahoma City", "Tulsa", "Norman", "Broken Arrow", "Edmond"],
-      description:
-        "Professional menopause HRT services across Oklahoma. We provide personalized hormone replacement therapy solutions to help women manage menopause symptoms and maintain hormonal balance through expert medical care.",
+        "Expert menopause HRT services for West Virginia women. We provide personalized hormone replacement therapy through telemedicine to help manage menopause symptoms and restore hormonal balance.",
     },
   ]
 
@@ -106,7 +130,7 @@ export default function MenopauseHRTPage() {
                 <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
                   Expert menopause HRT services for women experiencing hot flashes, night sweats, mood changes, and
                   other menopause symptoms. Licensed healthcare providers offering personalized hormone therapy
-                  solutions.
+                  solutions with heart and compassion.
                 </p>
                 <p className="text-lg font-semibold text-blue-600">Launching November 30, 2025</p>
               </div>

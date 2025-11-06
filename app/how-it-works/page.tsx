@@ -256,8 +256,9 @@ export default function HowItWorksPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    We help patients in Louisiana, Florida, Alabama, Mississippi, Texas, Idaho, Utah, and Oklahoma.
-                    Contact us to check if we can help you in your area.
+                    We help patients in Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota,
+                    Oklahoma, South Dakota, Texas, and West Virginia. Contact us to check if we can help you in your
+                    area.
                   </p>
                 </CardContent>
               </Card>
