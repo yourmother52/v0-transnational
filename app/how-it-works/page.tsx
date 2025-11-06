@@ -143,22 +143,82 @@ export default function HowItWorksPage() {
                   <Card key={step.number} className="relative overflow-hidden transition-shadow hover:shadow-lg">
                     <div className={`absolute top-0 left-0 w-2 h-full ${step.color.replace("text-", "bg-")}`} />
                     <CardHeader className="pl-8">
-                      <div className="flex items-start gap-4">
-                        <div className={`${step.bgColor} p-3 rounded-lg flex-shrink-0`}>
-                          <Icon className={`h-8 w-8 ${step.color}`} aria-hidden="true" />
-                        </div>
-                        <div className="flex-1 text-left">
-                          <div className="flex items-center gap-3 mb-2">
-                            <span
-                              className={`inline-flex items-center justify-center w-8 h-8 rounded-full ${step.color.replace("text-", "bg-")} text-white font-bold text-sm`}
-                            >
-                              {step.number}
-                            </span>
-                            <CardTitle className="text-xl md:text-2xl">{step.title}</CardTitle>
+                      <div className="flex flex-col md:flex-row items-start gap-6">
+                        <div className="flex-1 order-2 md:order-1">
+                          <div className="flex items-start gap-4">
+                            <div className={`${step.bgColor} p-3 rounded-lg flex-shrink-0`}>
+                              <Icon className={`h-8 w-8 ${step.color}`} aria-hidden="true" />
+                            </div>
+                            <div className="flex-1 text-left">
+                              <div className="flex items-center gap-3 mb-2">
+                                <span
+                                  className={`inline-flex items-center justify-center w-8 h-8 rounded-full ${step.color.replace("text-", "bg-")} text-white font-bold text-sm`}
+                                >
+                                  {step.number}
+                                </span>
+                                <CardTitle className="text-xl md:text-2xl">{step.title}</CardTitle>
+                              </div>
+                              <CardContent className="p-0">
+                                <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                              </CardContent>
+                            </div>
                           </div>
-                          <CardContent className="p-0">
-                            <p className="text-gray-600 leading-relaxed">{step.description}</p>
-                          </CardContent>
+                        </div>
+                        <div className="w-full md:w-48 flex-shrink-0 order-1 md:order-2">
+                          {step.number === 1 && (
+                            <Image
+                              src="/illustrations/step-1-phone-call.jpg"
+                              alt="Friendly illustration of person having a phone conversation with healthcare coordinator"
+                              width={192}
+                              height={192}
+                              className="w-full h-auto rounded-lg"
+                            />
+                          )}
+                          {step.number === 2 && (
+                            <Image
+                              src="/illustrations/step-2-calendar.jpg"
+                              alt="Cartoon illustration of person selecting appointment time on calendar"
+                              width={192}
+                              height={192}
+                              className="w-full h-auto rounded-lg"
+                            />
+                          )}
+                          {step.number === 3 && (
+                            <Image
+                              src="/illustrations/step-3-form.jpg"
+                              alt="Illustration of person filling out health form on computer"
+                              width={192}
+                              height={192}
+                              className="w-full h-auto rounded-lg"
+                            />
+                          )}
+                          {step.number === 4 && (
+                            <Image
+                              src="/illustrations/step-4-video-call.jpg"
+                              alt="Friendly cartoon of patient having video consultation with healthcare provider"
+                              width={192}
+                              height={192}
+                              className="w-full h-auto rounded-lg"
+                            />
+                          )}
+                          {step.number === 5 && (
+                            <Image
+                              src="/illustrations/step-5-lab-work.jpg"
+                              alt="Illustration of person getting lab work done or reviewing medical records"
+                              width={192}
+                              height={192}
+                              className="w-full h-auto rounded-lg"
+                            />
+                          )}
+                          {step.number === 6 && (
+                            <Image
+                              src="/illustrations/step-6-delivery.jpg"
+                              alt="Cartoon of person happily receiving medication package at home"
+                              width={192}
+                              height={192}
+                              className="w-full h-auto rounded-lg"
+                            />
+                          )}
                         </div>
                       </div>
                     </CardHeader>
@@ -202,66 +262,21 @@ export default function HowItWorksPage() {
 
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50" aria-labelledby="faq-heading">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="space-y-2">
-                <h2 id="faq-heading" className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
-                  Common Questions
+            <div className="flex flex-col items-center justify-center space-y-6 text-center">
+              <div className="space-y-4">
+                <h2
+                  id="faq-heading"
+                  className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900"
+                >
+                  Questions?
                 </h2>
-                <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed">
-                  Here are answers to questions people often ask about our process.
+                <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed text-pretty">
+                  Check out our FAQ page for answers to common questions about our services and process.
                 </p>
               </div>
-            </div>
-
-            <div className="mx-auto max-w-3xl space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">How long does the whole process take?</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    The time varies for each person. Most patients get their first medications within 2-4 weeks of their
-                    first call.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Do I need lab work before my appointment?</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    Not always. Your provider will talk to you during your video visit. They'll let you know if you need
-                    lab work before starting treatment.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">What if I have questions during the process?</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    We're here to help you every step of the way. You can call us anytime at 844-HRTMEDS or use our
-                    contact form.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Is this service available in my state?</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    We help patients in Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota,
-                    Oklahoma, South Dakota, Texas, and West Virginia. Contact us to check if we can help you in your
-                    area.
-                  </p>
-                </CardContent>
-              </Card>
+              <Button size="lg" className="bg-red-500 text-white hover:bg-red-600" asChild>
+                <Link href="/faq">View FAQ</Link>
+              </Button>
             </div>
           </div>
         </section>
