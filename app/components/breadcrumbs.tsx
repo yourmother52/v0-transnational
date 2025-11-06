@@ -19,7 +19,10 @@ interface BreadcrumbsProps {
 }
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://transnationalhealth.org"
+  const baseUrl =
+    typeof window !== "undefined"
+      ? window.location.origin
+      : process.env.NEXT_PUBLIC_SITE_URL || "https://transnationalhealth.org"
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -28,12 +31,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: {
-        "@type": "WebPage",
-        "@id": `${baseUrl}${item.href}`,
-        url: `${baseUrl}${item.href}`,
-        name: item.name,
-      },
+      item: `${baseUrl}${item.href}`,
     })),
   }
 
@@ -41,7 +39,12 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-      <nav aria-label="Breadcrumb navigation" className="container px-4 md:px-6 py-4">
+      <nav
+        aria-label="Breadcrumb"
+        className="container px-4 md:px-6 py-4"
+        itemScope
+        itemType="https://schema.org/BreadcrumbList"
+      >
         <Breadcrumb>
           <BreadcrumbList className="text-sm">
             {items.map((item, index) => {
@@ -50,9 +53,13 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
 
               return (
                 <div key={item.href} className="contents">
-                  <UIBreadcrumbItem>
+                  <UIBreadcrumbItem itemScope itemProp="itemListElement" itemType="https://schema.org/ListItem">
                     {isLast ? (
-                      <BreadcrumbPage className="flex items-center gap-1.5 font-medium text-foreground" itemProp="name">
+                      <BreadcrumbPage
+                        className="flex items-center gap-1.5 font-medium text-foreground"
+                        itemProp="name"
+                        aria-current="page"
+                      >
                         {isFirst && <Home className="h-4 w-4" aria-hidden="true" />}
                         {item.name}
                       </BreadcrumbPage>
@@ -65,14 +72,16 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
                         >
                           {isFirst && <Home className="h-4 w-4" aria-hidden="true" />}
                           <span itemProp="name">{item.name}</span>
+                          <meta itemProp="position" content={String(index + 1)} />
                         </Link>
                       </BreadcrumbLink>
                     )}
+                    {isLast && <meta itemProp="position" content={String(index + 1)} />}
                   </UIBreadcrumbItem>
 
                   {!isLast && (
                     <BreadcrumbSeparator>
-                      <ChevronRight className="h-4 w-4" />
+                      <ChevronRight className="h-4 w-4" aria-hidden="true" />
                     </BreadcrumbSeparator>
                   )}
                 </div>
