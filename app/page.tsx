@@ -74,7 +74,7 @@ export default function HomePage() {
 
         <main id="main-content" className="flex-1">
           <section
-            className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-50 via-white to-red-50"
+            className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-100 via-white to-red-100"
             aria-labelledby="hero-heading"
           >
             <div className="container px-4 md:px-6">
