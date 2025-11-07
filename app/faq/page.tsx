@@ -356,16 +356,13 @@ export default function FAQPage() {
                         <AccordionTrigger className="text-left">How does the sliding scale work?</AccordionTrigger>
                         <AccordionContent>
                           <div className="space-y-3">
-                            <p>We offer a sliding scale at 3 levels to make care more affordable:</p>
+                            <p>We offer a sliding scale at 2 levels to make care more affordable:</p>
                             <ul className="list-disc pl-6 space-y-2">
                               <li>
                                 <strong>Slide 1:</strong> 25% discount on medical services
                               </li>
                               <li>
                                 <strong>Slide 2:</strong> 50% discount on medical services
-                              </li>
-                              <li>
-                                <strong>Slide 3:</strong> 75% discount on medical services
                               </li>
                             </ul>
                             <p className="text-sm text-gray-600 mt-3">
@@ -387,30 +384,6 @@ export default function FAQPage() {
                                 Campaign for Southern Equality - Funding Your Transition
                               </a>
                             </div>
-                          </div>
-                        </AccordionContent>
-                      </AccordionItem>
-
-                      <AccordionItem value="item-14">
-                        <AccordionTrigger className="text-left">How does the sliding scale work?</AccordionTrigger>
-                        <AccordionContent>
-                          <div className="space-y-3">
-                            <p>We offer a sliding scale at 3 levels to make care more affordable:</p>
-                            <ul className="list-disc pl-6 space-y-2">
-                              <li>
-                                <strong>Slide 1:</strong> 25% discount on medical services
-                              </li>
-                              <li>
-                                <strong>Slide 2:</strong> 50% discount on medical services
-                              </li>
-                              <li>
-                                <strong>Slide 3:</strong> 75% discount on medical services
-                              </li>
-                            </ul>
-                            <p className="text-sm text-gray-600 mt-3">
-                              <strong>Please note:</strong> These discounts apply only to medical visit costs (initial
-                              and follow-up visits). They do not apply to the cost of medications or lab work.
-                            </p>
                           </div>
                         </AccordionContent>
                       </AccordionItem>
