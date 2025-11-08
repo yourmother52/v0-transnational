@@ -709,15 +709,54 @@ export default function FAQPage() {
           © {new Date().getFullYear()} Transnational Health Corp. A Maryland 501(c)(3) nonprofit corporation.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="/" className="text-xs hover:underline underline-offset-4 text-gray-600">
-            Home
-          </Link>
-          <Link href="/partnerships" className="text-xs hover:underline underline-offset-4 text-gray-600">
-            Partners and Resources
-          </Link>
-          <Link href="/contact" className="text-xs hover:underline underline-offset-4 text-gray-600">
-            Contact
-          </Link>
+          <a
+            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=d9fa3e4b-2e14-407d-b5c3-a64fe2e8f201"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs hover:underline underline-offset-4 text-gray-600"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=a007ab9b-b070-4ffb-8d93-3e91e6854ef0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs hover:underline underline-offset-4 text-gray-600"
+          >
+            Return Policy
+          </a>
+          <a
+            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=eae7430a-70bf-4a6e-91f2-a44bf123dd64"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs hover:underline underline-offset-4 text-gray-600"
+          >
+            Shipping Policy
+          </a>
+          <a
+            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=2448e4b4-8b92-4fc1-9b71-183f813c1dcd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs hover:underline underline-offset-4 text-gray-600"
+          >
+            Terms and Conditions
+          </a>
+          <a
+            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=3867c807-36ed-4324-aa67-9efd33f5959d"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs hover:underline underline-offset-4 text-gray-600"
+          >
+            Disclaimer
+          </a>
+          <a
+            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=3f08a9a2-6996-4382-9872-df135b50f88f"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs hover:underline underline-offset-4 text-gray-600"
+          >
+            Acceptable Use Policy
+          </a>
         </nav>
       </footer>
     </div>
