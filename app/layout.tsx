@@ -6,6 +6,7 @@ import { Analytics } from "./components/analytics"
 import { ErrorBoundary } from "./components/error-boundary"
 import { Suspense } from "react"
 import { VercelAnalytics } from "./components/vercel-analytics"
+import { GlobalHeader } from "./components/global-header"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -328,6 +329,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Suspense fallback={<div>Loading...</div>}>
           <ErrorBoundary>
+            <GlobalHeader />
             {children}
             <Analytics />
             <VercelAnalytics />

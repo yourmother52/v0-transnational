@@ -6,8 +6,6 @@ import { Heart, Shield, Users, CheckCircle, Phone, Facebook, Instagram } from "l
 import Link from "next/link"
 import Image from "next/image"
 import { ContactForm } from "./components/contact-form"
-import { DonationBanner } from "./components/donation-banner"
-import { NavigationLinks } from "./components/navigation-links"
 import { trackButtonClick } from "./components/analytics"
 
 function BlueskyIcon({ className }: { className?: string }) {
@@ -48,29 +46,12 @@ export default function HomePage() {
       />
 
       <div className="flex flex-col min-h-screen">
-        <DonationBanner />
-
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50"
         >
           Skip to main content
         </a>
-
-        <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
-          <Link href="/" className="flex items-center justify-center" aria-label="Transnational Health - Home">
-            <Image
-              src="/logo.jpg"
-              alt="Transnational Health Corp logo featuring red United States silhouette with blue text"
-              width={120}
-              height={64}
-              priority
-              className="h-16 w-auto"
-              quality={90}
-            />
-          </Link>
-          <NavigationLinks />
-        </header>
 
         <main id="main-content" className="flex-1">
           <section

@@ -7,6 +7,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { trackButtonClick } from "../components/analytics"
 import { Breadcrumbs } from "../components/breadcrumbs"
+import GlobalHeader from "../components/global-header"
 
 export default function TestosteroneTherapyPage() {
   const states = [
@@ -96,21 +97,7 @@ export default function TestosteroneTherapyPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
-        <Link href="/" className="flex items-center justify-center" aria-label="Transnational Health - Home">
-          <Image src="/logo.jpg" alt="Transnational Health Corp logo" width={120} height={64} className="h-16 w-auto" />
-        </Link>
-        <div className="ml-auto flex items-center gap-4">
-          <a
-            href="tel:844-478-6337"
-            className="flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
-            onClick={() => trackButtonClick("Phone Header", "testosterone-page")}
-          >
-            <Phone className="h-4 w-4" />
-            <span className="hidden sm:inline">844-HRTMEDS</span>
-          </a>
-        </div>
-      </header>
+      <GlobalHeader />
 
       <Breadcrumbs
         items={[

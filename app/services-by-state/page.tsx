@@ -140,51 +140,7 @@ export default function ServicesByStatePage() {
       />
 
       <div className="flex flex-col min-h-screen">
-        {/* Donation Banner */}
-        <div className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-3 px-4 text-center">
-          <div className="container mx-auto flex items-center justify-center gap-4 flex-wrap">
-            <span className="text-sm md:text-base font-medium">
-              Support our mission to provide accessible HRT services
-            </span>
-            <Button
-              size="sm"
-              variant="secondary"
-              className="bg-white text-red-600 hover:bg-gray-100 font-semibold"
-              asChild
-            >
-              <a
-                href="https://givebutter.com/fyZJf5"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => {
-                  trackButtonClick("Donate Button", "top-banner")
-                  trackButtonClickVercel("Donate Button", "top-banner")
-                }}
-              >
-                Donate to keep HRT affordable!
-              </a>
-            </Button>
-          </div>
-        </div>
-
-        {/* Header */}
-        <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
-          <Link href="/" className="flex items-center justify-center" aria-label="Transnational Health - Home">
-            <Image
-              src="/logo.jpg"
-              alt="Transnational Health Corp logo"
-              width={120}
-              height={64}
-              className="h-16 w-auto"
-            />
-          </Link>
-          <nav className="ml-auto">
-            <Button size="sm" className="bg-red-500 hover:bg-red-600" asChild>
-              <Link href="/#contact">Contact Us</Link>
-            </Button>
-          </nav>
-        </header>
-
+        {/* Breadcrumbs */}
         <Breadcrumbs
           items={[
             { name: "Home", href: "/" },

@@ -1,10 +1,7 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 import Image from "next/image"
 import { Phone, Mail, MapPin } from "lucide-react"
 import { GeneralContactForm } from "../components/general-contact-form"
-import { DonationBanner } from "../components/donation-banner"
-import { NavigationLinks } from "../components/navigation-links"
 import { Breadcrumbs } from "../components/breadcrumbs"
 
 export const metadata: Metadata = {
@@ -22,23 +19,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <DonationBanner />
-
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
-        <Link href="/" className="flex items-center justify-center" aria-label="Transnational Health - Home">
-          <Image
-            src="/logo.jpg"
-            alt="Transnational Health Corp logo featuring red United States silhouette with blue text"
-            width={120}
-            height={64}
-            priority
-            className="h-16 w-auto"
-            quality={90}
-          />
-        </Link>
-        <NavigationLinks />
-      </header>
-
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },
