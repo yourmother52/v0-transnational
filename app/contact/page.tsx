@@ -89,8 +89,8 @@ export default function ContactPage() {
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-6">
                   <h3 className="font-semibold text-blue-900 mb-2">Launching November 30, 2025</h3>
                   <p className="text-sm text-blue-800">
-                    We're preparing to launch our services on November 30, 2025. Contact us now to join our waitlist and
-                    be among the first to access our HRT services, or if you have any questions.
+                    We're preparing to launch our services on November 30, 2025. Contact us now if you have any
+                    questions or want to learn more about our HRT services.
                   </p>
                 </div>
               </div>

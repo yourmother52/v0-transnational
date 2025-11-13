@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Testosterone Replacement Therapy | TRT for Low Testosterone",
   description:
-    "Professional testosterone replacement therapy (TRT) for men in Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Texas, and West Virginia. Licensed providers offering hormone therapy for low T, fatigue, muscle loss, and testosterone deficiency. Call 844-HRTMEDS.",
+    "Professional testosterone replacement therapy (TRT) for men in Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and West Virginia. Licensed providers offering hormone therapy for low T, fatigue, muscle loss, and testosterone deficiency. Call 844-HRTMEDS.",
   keywords: [
     "testosterone replacement therapy",
     "TRT",
@@ -25,7 +25,6 @@ export const metadata: Metadata = {
     "TRT North Dakota",
     "TRT Oklahoma",
     "TRT South Dakota",
-    "TRT Texas",
     "TRT West Virginia",
     "testosterone therapy Alabama",
     "testosterone therapy Arkansas",
@@ -37,7 +36,6 @@ export const metadata: Metadata = {
     "testosterone therapy North Dakota",
     "testosterone therapy Oklahoma",
     "testosterone therapy South Dakota",
-    "testosterone therapy Texas",
     "testosterone therapy West Virginia",
   ],
   openGraph: {

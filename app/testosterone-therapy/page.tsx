@@ -72,22 +72,6 @@ export default function TestosteroneTherapyPage() {
         "Comprehensive testosterone replacement therapy for South Dakota men. Our healthcare providers offer evidence-based TRT treatments to address low energy, decreased muscle mass, and other low testosterone symptoms.",
     },
     {
-      name: "Texas",
-      cities: [
-        "Houston",
-        "Dallas",
-        "Austin",
-        "San Antonio",
-        "Fort Worth",
-        "El Paso",
-        "Arlington",
-        "Corpus Christi",
-        "Plano",
-      ],
-      description:
-        "Leading testosterone replacement therapy services throughout Texas. Our healthcare providers offer customized TRT solutions for men experiencing low testosterone symptoms including low energy, reduced muscle mass, and decreased vitality.",
-    },
-    {
       name: "West Virginia",
       cities: ["Charleston", "Huntington", "Morgantown", "Parkersburg", "Wheeling"],
       description:
@@ -129,8 +113,8 @@ export default function TestosteroneTherapyPage() {
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" className="bg-transparent" asChild>
-                  <Link href="/#contact" onClick={() => trackButtonClick("Get Notified CTA", "testosterone-hero")}>
-                    Join Our Waitlist
+                  <Link href="/book" onClick={() => trackButtonClick("Book Now CTA", "testosterone-hero")}>
+                    Book Now!
                   </Link>
                 </Button>
               </div>
@@ -327,8 +311,8 @@ export default function TestosteroneTherapyPage() {
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" className="bg-transparent" asChild>
-                  <Link href="/#contact" onClick={() => trackButtonClick("Contact CTA", "testosterone-bottom")}>
-                    Join Our Waitlist
+                  <Link href="/book" onClick={() => trackButtonClick("Book Now CTA", "testosterone-bottom")}>
+                    Book Now!
                   </Link>
                 </Button>
               </div>

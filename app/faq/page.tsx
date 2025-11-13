@@ -112,7 +112,7 @@ export default function FAQPage() {
                         <AccordionContent>
                           Our services are for trans and gender divergent people who need HRT. We help people in
                           Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South
-                          Dakota, Texas, and West Virginia.
+                          Dakota, and West Virginia.
                         </AccordionContent>
                       </AccordionItem>
 
@@ -122,8 +122,8 @@ export default function FAQPage() {
                         </AccordionTrigger>
                         <AccordionContent>
                           Yes. Right now we can only help people who live in Alabama, Arkansas, Idaho, Indiana,
-                          Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Texas, or West Virginia.
-                          This is because of state laws about healthcare.
+                          Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, or West Virginia. This is
+                          because of state laws about healthcare.
                         </AccordionContent>
                       </AccordionItem>
 

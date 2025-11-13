@@ -82,13 +82,6 @@ export default function ServicesByStatePage() {
       keywords: "HRT South Dakota, hormone therapy South Dakota, transgender healthcare South Dakota, HRT Sioux Falls",
     },
     {
-      name: "Texas",
-      slug: "texas",
-      description:
-        "Comprehensive hormone replacement therapy services available throughout Texas. Our licensed healthcare providers offer HRT to trans and gender divergent people in Houston, Dallas, Austin, San Antonio, Fort Worth, and all Texas cities.",
-      keywords: "HRT Texas, hormone therapy Texas, transgender healthcare Texas, HRT Houston, HRT Dallas, HRT Austin",
-    },
-    {
       name: "West Virginia",
       slug: "west-virginia",
       description:
@@ -109,7 +102,7 @@ export default function ServicesByStatePage() {
             "@type": "MedicalWebPage",
             name: "HRT Services by State - Hormone Replacement Therapy",
             description:
-              "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people across Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Texas, and West Virginia.",
+              "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people across Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and West Virginia.",
             specialty: "Endocrinology",
             about: {
               "@type": "MedicalTherapy",
@@ -132,7 +125,6 @@ export default function ServicesByStatePage() {
               { "@type": "State", name: "North Dakota" },
               { "@type": "State", name: "Oklahoma" },
               { "@type": "State", name: "South Dakota" },
-              { "@type": "State", name: "Texas" },
               { "@type": "State", name: "West Virginia" },
             ],
           }),
@@ -159,9 +151,8 @@ export default function ServicesByStatePage() {
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl leading-relaxed">
                     Compassionate hormone replacement therapy for trans and gender divergent people in Alabama,
-                    Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Texas,
-                    and West Virginia. Licensed healthcare providers delivering safe, affirming HRT through
-                    telemedicine.
+                    Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and
+                    West Virginia. Licensed healthcare providers delivering safe, affirming HRT through telemedicine.
                   </p>
                   <div className="flex items-center justify-center gap-2 pt-4">
                     <Phone className="h-5 w-5 text-blue-600" />
@@ -336,13 +327,13 @@ export default function ServicesByStatePage() {
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
                     <Button size="lg" className="bg-red-500 hover:bg-red-600" asChild>
                       <Link
-                        href="/#contact"
+                        href="/book"
                         onClick={() => {
-                          trackButtonClick("Join Our Waitlist CTA", "bottom-cta")
-                          trackButtonClickVercel("Join Our Waitlist CTA", "bottom-cta")
+                          trackButtonClick("Book Now CTA", "bottom-cta")
+                          trackButtonClickVercel("Book Now CTA", "bottom-cta")
                         }}
                       >
-                        Join Our Waitlist
+                        Book Now!
                       </Link>
                     </Button>
                     <Button size="lg" variant="outline" className="bg-transparent" asChild>

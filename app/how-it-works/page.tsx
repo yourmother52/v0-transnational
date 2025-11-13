@@ -103,6 +103,11 @@ export default function HowItWorksPage() {
                   Getting started with our HRT services is easy. Follow these six steps to begin your care from home.
                 </p>
               </div>
+              <div className="pt-4">
+                <Button size="lg" className="bg-red-500 text-white hover:bg-red-600" asChild>
+                  <Link href="/book">Book Your Intake Call Now</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>

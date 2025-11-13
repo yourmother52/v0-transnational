@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "HRT Services by State | Hormone Replacement Therapy in AL, AR, ID, IN, LA, MO, MT, ND, OK, SD, TX, WV",
+  title: "HRT Services by State | Hormone Replacement Therapy in AL, AR, ID, IN, LA, MO, MT, ND, OK, SD, WV",
   description:
-    "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people in Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Texas, and West Virginia. Licensed providers offering estrogen therapy, testosterone therapy, and customized HRT regimens through telemedicine.",
+    "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people in Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and West Virginia. Licensed providers offering estrogen therapy, testosterone therapy, and customized HRT regimens through telemedicine.",
   keywords: [
     "HRT Alabama",
     "HRT Arkansas",
@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     "HRT North Dakota",
     "HRT Oklahoma",
     "HRT South Dakota",
-    "HRT Texas",
     "HRT West Virginia",
     "hormone replacement therapy Alabama",
     "hormone replacement therapy Arkansas",
@@ -27,7 +26,6 @@ export const metadata: Metadata = {
     "hormone replacement therapy North Dakota",
     "hormone replacement therapy Oklahoma",
     "hormone replacement therapy South Dakota",
-    "hormone replacement therapy Texas",
     "hormone replacement therapy West Virginia",
     "transgender healthcare Alabama",
     "transgender healthcare Arkansas",
@@ -39,7 +37,6 @@ export const metadata: Metadata = {
     "transgender healthcare North Dakota",
     "transgender healthcare Oklahoma",
     "transgender healthcare South Dakota",
-    "transgender healthcare Texas",
     "transgender healthcare West Virginia",
     "estrogen therapy",
     "testosterone therapy",
@@ -58,15 +55,12 @@ export const metadata: Metadata = {
     "HRT Oklahoma City",
     "HRT Tulsa",
     "HRT Sioux Falls",
-    "HRT Houston",
-    "HRT Dallas",
-    "HRT Austin",
     "HRT Charleston WV",
   ],
   openGraph: {
     title: "HRT Services by State | Hormone Replacement Therapy",
     description:
-      "Comprehensive HRT services for trans and gender divergent people in Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Texas, and West Virginia.",
+      "Comprehensive HRT services for trans and gender divergent people in Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and West Virginia.",
     type: "website",
     url: "https://transnationalhealth.org/services-by-state",
   },

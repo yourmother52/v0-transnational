@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, AlertCircle, Loader2 } from "lucide-react"
+import { CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
 import { trackFormSubmission, trackFormSubmissionVercel } from "./analytics"
 
 interface FormData {
@@ -103,7 +103,7 @@ export function ContactForm() {
       <CardHeader>
         <CardTitle className="text-center">Stay Connected</CardTitle>
         <CardDescription className="text-center">
-          Fill out the form below and we'll notify you as soon as our services are available.
+          Fill out the form below and we'll get in touch with you.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -175,7 +175,7 @@ export function ContactForm() {
               disabled={isPending}
             />
             <div id="email-help" className="text-xs text-gray-500">
-              We'll use this to keep you updated about our November 30, 2025 launch
+              We will only use your information to keep you updated about Transnational Health news.
             </div>
           </div>
           <div className="space-y-2">
@@ -226,12 +226,11 @@ export function ContactForm() {
                 Submitting...
               </>
             ) : (
-              "Join Our Waitlist"
+              "Contact Us"
             )}
           </Button>
           <p className="text-xs text-gray-500 text-center">
-            We respect your privacy and will only use your information to keep you updated about our November 30, 2025
-            launch. We will never share your information with third parties.
+            We respect your privacy and will only use your information to keep you updated about Transnational Health news. We will never share your information with third parties.
           </p>
         </form>
       </CardContent>

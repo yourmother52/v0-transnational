@@ -71,22 +71,6 @@ export default function MenopauseHRTPage() {
         "Comprehensive menopause hormone therapy for South Dakota women. Our healthcare providers offer evidence-based HRT treatments to address hot flashes, night sweats, and other menopause symptoms.",
     },
     {
-      name: "Texas",
-      cities: [
-        "Houston",
-        "Dallas",
-        "Austin",
-        "San Antonio",
-        "Fort Worth",
-        "El Paso",
-        "Arlington",
-        "Corpus Christi",
-        "Plano",
-      ],
-      description:
-        "Leading menopause hormone replacement therapy services throughout Texas. Our healthcare providers offer customized HRT solutions for women experiencing menopause symptoms including hot flashes, mood swings, and hormonal changes.",
-    },
-    {
       name: "West Virginia",
       cities: ["Charleston", "Huntington", "Morgantown", "Parkersburg", "Wheeling"],
       description:
@@ -128,8 +112,8 @@ export default function MenopauseHRTPage() {
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" className="bg-transparent" asChild>
-                  <Link href="/#contact" onClick={() => trackButtonClick("Get Notified CTA", "menopause-hero")}>
-                    Join Our Waitlist
+                  <Link href="/book" onClick={() => trackButtonClick("Book Now CTA", "menopause-hero")}>
+                    Book Now!
                   </Link>
                 </Button>
               </div>
@@ -315,8 +299,8 @@ export default function MenopauseHRTPage() {
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" className="bg-transparent" asChild>
-                  <Link href="/#contact" onClick={() => trackButtonClick("Contact CTA", "menopause-bottom")}>
-                    Join Our Waitlist
+                  <Link href="/book" onClick={() => trackButtonClick("Book Now CTA", "menopause-bottom")}>
+                    Book Now!
                   </Link>
                 </Button>
               </div>

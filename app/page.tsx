@@ -80,7 +80,7 @@ export default function HomePage() {
                     className="bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
                     asChild
                   >
-                    <Link href="#contact">Join Our Waitlist</Link>
+                    <Link href="/book">Book Now!</Link>
                   </Button>
                   <Button
                     variant="outline"
@@ -355,11 +355,11 @@ export default function HomePage() {
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
                   <h2 id="contact-heading" className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
-                    Join Our Waitlist
+                    Contact Us
                   </h2>
                   <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Be among the first to access our services when we launch on November 30, 2025. Sign up now to
-                    reserve your spot and get priority access to our comprehensive HRT services.
+                    Have questions or want to learn more about our services? Fill out the form below and we'll get back
+                    to you as soon as possible.
                   </p>
                   <div className="flex items-center justify-center gap-2 pt-4">
                     <Phone className="h-5 w-5 text-blue-600" aria-hidden="true" />

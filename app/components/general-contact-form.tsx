@@ -32,7 +32,7 @@ interface GeneralContactFormProps {
 }
 
 export function GeneralContactForm({
-  title = "Contact Us",
+  title = "Get in Touch",
   description = "Have questions or want to learn more? Fill out the form below and we'll get back to you as soon as possible.",
   buttonText = "Send Message",
   successMessage = "Thank you for contacting us! We'll get back to you soon.",
