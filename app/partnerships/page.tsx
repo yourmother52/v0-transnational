@@ -10,11 +10,36 @@ export const metadata: Metadata = {
   title: "Partners and Resources | Transnational Health",
   description:
     "Learn about our partnerships with leading organizations in transgender healthcare, including WPATH, CE Repro, and Metro Area Advanced Practice Healthcare, plus recommended community resources.",
+  keywords: [
+    "transgender healthcare partners",
+    "LGBTQ health organizations",
+    "transgender advocacy partners",
+    "gender affirming care partners",
+    "transgender healthcare resources",
+    "WPATH members",
+    "transgender legal resources",
+    "trans community organizations",
+    "transgender health nonprofits",
+    "gender diverse healthcare partners",
+    "transgender support organizations",
+    "LGBTQ healthcare collaborations",
+    "transgender care network",
+    "gender affirming resources",
+    "transgender healthcare advocacy",
+    "trans health partnerships",
+    "LGBTQ community resources",
+    "transgender financial assistance",
+    "gender diverse support",
+    "transgender healthcare network",
+  ],
   openGraph: {
     title: "Partners and Resources | Transnational Health",
     description:
       "Collaborating with leading organizations and connecting our community with valuable resources for comprehensive, affirming transgender healthcare.",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://transnationalhealth.org/partnerships",
   },
 }
 
@@ -226,6 +251,7 @@ export default function PartnershipsPage() {
                             height={120}
                             className="rounded-lg"
                             loading="lazy"
+                            sizes="(max-width: 768px) 100px, 120px"
                           />
                         </div>
                         <div className="flex-1 text-center md:text-left">
@@ -280,7 +306,7 @@ export default function PartnershipsPage() {
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
         <div className="flex items-center gap-2">
-          <Image src="/logo.jpg" alt="Transnational Health Corp logo" width={36} height={36} className="h-9 w-auto" />
+          <Image src="/logo.jpg" alt="Transnational Health Corp logo" width={36} height={36} className="h-9 w-auto" loading="lazy" />
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} Transnational Health Corp. A 501(c)(3) nonprofit corporation.
           </p>

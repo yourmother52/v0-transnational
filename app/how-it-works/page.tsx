@@ -10,10 +10,35 @@ export const metadata: Metadata = {
   title: "How It Works - Transnational Health",
   description:
     "Learn about our simple 6-step process for getting started with hormone replacement therapy services. From initial consultation to receiving your medications at home.",
+  keywords: [
+    "HRT process",
+    "how to get HRT",
+    "transgender healthcare process",
+    "hormone therapy steps",
+    "HRT appointment process",
+    "transgender HRT how it works",
+    "gender affirming care process",
+    "HRT consultation steps",
+    "hormone therapy timeline",
+    "transgender healthcare steps",
+    "HRT provider visit",
+    "hormone therapy intake",
+    "transgender telemedicine process",
+    "HRT medication delivery",
+    "gender affirming HRT process",
+    "transgender healthcare journey",
+    "HRT care coordination",
+    "hormone therapy at home",
+    "transgender HRT consultation",
+    "gender diverse healthcare process",
+  ],
   openGraph: {
     title: "How It Works - Transnational Health",
     description: "Discover our straightforward process for accessing HRT services from the comfort of your home.",
     url: "https://transnationalhealth.org/how-it-works",
+  },
+  alternates: {
+    canonical: "https://transnationalhealth.org/how-it-works",
   },
 }
 
@@ -75,8 +100,26 @@ export default function HowItWorksPage() {
     },
   ]
 
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Get Started with HRT at Transnational Health",
+    description:
+      "A 6-step process to begin your hormone replacement therapy journey with Transnational Health, from initial consultation to receiving medications at home.",
+    totalTime: "P2W",
+    step: steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.title,
+      text: step.description,
+      url: `https://transnationalhealth.org/how-it-works#step-${step.number}`,
+    })),
+  }
+
   return (
     <div className="flex flex-col min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50"

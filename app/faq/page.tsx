@@ -11,16 +11,98 @@ export const metadata: Metadata = {
   title: "Frequently Asked Questions - Transnational Health",
   description:
     "Find answers to common questions about our HRT services, process, costs, and more. Learn how we provide accessible hormone therapy care.",
+  keywords: [
+    "HRT FAQ",
+    "transgender healthcare questions",
+    "hormone therapy FAQ",
+    "HRT cost questions",
+    "transgender HRT process",
+    "HRT appointment questions",
+    "hormone therapy safety",
+    "transgender healthcare FAQ",
+    "HRT insurance questions",
+    "gender affirming care questions",
+    "transgender telemedicine FAQ",
+    "HRT sliding scale",
+    "hormone therapy eligibility",
+    "transgender healthcare cost",
+    "HRT provider questions",
+    "hormone therapy timeline",
+    "transgender care process",
+    "HRT medication delivery",
+    "gender affirming care FAQ",
+    "transgender healthcare access",
+  ],
   openGraph: {
     title: "FAQ - Transnational Health",
     description: "Get answers to your questions about our HRT services and process.",
     url: "https://transnationalhealth.org/faq",
   },
+  alternates: {
+    canonical: "https://transnationalhealth.org/faq",
+  },
 }
 
 export default function FAQPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is Transnational Health?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Transnational Health is a 501(c)(3) nonprofit that helps trans and gender divergent people get HRT services. We work with licensed providers to bring care to your home.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who can use your services?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our services are for trans and gender divergent people who need HRT. We help people in Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and West Virginia.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does it cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Initial visit: $250, Follow-up visit: $90. Medication and lab costs depend on your plan. As a nonprofit, we work to keep costs as low as possible while providing quality care.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you take insurance?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We do NOT accept insurance. This protects your privacy and keeps costs transparent. However, we can provide detailed receipts (superbills) that you may be able to submit to your insurance for out-of-network reimbursement.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I get started?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "First, call us to talk with our HRT coordinator. They will set up your file and answer your questions. Then you'll book a video visit with a provider.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are your providers licensed?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. All our providers are licensed healthcare professionals. They have training in HRT and transgender healthcare. All our providers are members of WPATH (World Professional Association for Transgender Health).",
+        },
+      },
+    ],
+  }
+
   return (
     <div className="flex flex-col min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50"

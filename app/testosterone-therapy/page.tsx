@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Phone, CheckCircle, Activity, Zap, TrendingUp } from "lucide-react"
+import { Phone, CheckCircle, Activity, Zap, TrendingUp } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 import { trackButtonClick } from "../components/analytics"
@@ -323,7 +323,14 @@ export default function TestosteroneTherapyPage() {
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
         <div className="flex items-center gap-2">
-          <Image src="/logo.jpg" alt="Transnational Health Corp logo" width={120} height={64} className="h-9 w-auto" />
+          <Image 
+            src="/logo.jpg" 
+            alt="Transnational Health Corp logo" 
+            width={120} 
+            height={64} 
+            className="h-9 w-auto"
+            loading="lazy"
+          />
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} Transnational Health Corp. A Maryland nonprofit corporation.
           </p>

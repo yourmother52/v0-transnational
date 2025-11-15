@@ -2,11 +2,12 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Phone, CheckCircle, Thermometer, Moon, Activity } from "lucide-react"
+import { Phone, CheckCircle, Thermometer, Moon, Activity } from 'lucide-react'
 import Link from "next/link"
 import { trackButtonClick } from "../components/analytics"
 import { Breadcrumbs } from "../components/breadcrumbs"
 import GlobalHeader from "../components/global-header"
+import Image from "next/image"
 
 export default function MenopauseHRTPage() {
   const states = [
@@ -311,7 +312,14 @@ export default function MenopauseHRTPage() {
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
         <div className="flex items-center gap-2">
-          <img src="/logo.jpg" alt="Transnational Health Corp logo" className="h-9 w-auto" />
+          <Image 
+            src="/logo.jpg" 
+            alt="Transnational Health Corp logo" 
+            width={120} 
+            height={64} 
+            className="h-9 w-auto"
+            loading="lazy"
+          />
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} Transnational Health Corp. A Maryland nonprofit corporation.
           </p>

@@ -8,11 +8,31 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Get in touch with Transnational Health Corp. We're here to answer your questions about our HRT services and help you on your healthcare journey.",
+  keywords: [
+    "contact transgender healthcare",
+    "HRT questions",
+    "transgender health contact",
+    "hormone therapy consultation",
+    "trans healthcare support",
+    "HRT coordinator contact",
+    "transgender telemedicine contact",
+    "gender affirming care questions",
+    "HRT appointment scheduling",
+    "transgender healthcare inquiry",
+    "hormone therapy information",
+    "trans health services contact",
+    "gender diverse healthcare contact",
+    "HRT consultation request",
+    "transgender healthcare help",
+  ],
   openGraph: {
     title: "Contact Us | Transnational Health",
     description:
       "Get in touch with Transnational Health Corp. We're here to answer your questions about our HRT services.",
     url: "https://transnationalhealth.org/contact",
+  },
+  alternates: {
+    canonical: "https://transnationalhealth.org/contact",
   },
 }
 

@@ -365,6 +365,7 @@ export default function ServicesByStatePage() {
                 width={120}
                 height={64}
                 className="h-9 w-auto"
+                loading="lazy"
               />
               <p className="text-xs text-gray-600">
                 © {new Date().getFullYear()} Transnational Health Corp. A 501(c)(3) nonprofit corporation.

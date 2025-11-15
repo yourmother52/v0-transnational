@@ -10,11 +10,36 @@ export const metadata: Metadata = {
   title: "About Us - Transnational Health",
   description:
     "Learn about Transnational Health Corp, a 501(c)(3) nonprofit organization committed to providing accessible, affirming hormone replacement therapy services for trans and gender divergent people.",
+  keywords: [
+    "transgender healthcare nonprofit",
+    "501c3 transgender health",
+    "trans health organization",
+    "gender affirming care nonprofit",
+    "transgender HRT nonprofit",
+    "LGBTQ healthcare nonprofit",
+    "transgender community support",
+    "WPATH member organization",
+    "transgender health Maryland",
+    "gender divergent healthcare",
+    "trans healthcare mission",
+    "nonprofit HRT services",
+    "transgender advocacy",
+    "gender affirming nonprofit",
+    "trans health values",
+    "transgender care transparency",
+    "Candid transparency seal",
+    "transgender healthcare access",
+    "affirming HRT services",
+    "transgender healthcare equity",
+  ],
   openGraph: {
     title: "About Us - Transnational Health",
     description:
       "Learn about our nonprofit mission to provide accessible, affirming HRT services for trans and gender divergent people.",
     url: "https://transnationalhealth.org/about",
+  },
+  alternates: {
+    canonical: "https://transnationalhealth.org/about",
   },
 }
 

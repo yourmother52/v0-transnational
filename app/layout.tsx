@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next/metadata"
-import { Inter } from "next/font/google"
+import { Inter } from 'next/font/google'
 import "./globals.css"
 import { Analytics } from "./components/analytics"
 import { ErrorBoundary } from "./components/error-boundary"
@@ -13,6 +13,7 @@ const inter = Inter({
   display: "swap",
   variable: "--font-inter",
   preload: true,
+  weight: ["400", "600", "700"],
 })
 
 export const viewport: Viewport = {
