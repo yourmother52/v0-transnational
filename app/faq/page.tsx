@@ -1,7 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Phone } from "lucide-react"
+import { Phone } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumbs } from "../components/breadcrumbs"
@@ -102,7 +102,7 @@ export default function FAQPage() {
                       <AccordionItem value="item-1">
                         <AccordionTrigger className="text-left">What is Transnational Health?</AccordionTrigger>
                         <AccordionContent>
-                          Transnational Health is a Maryland 501(c)(3) nonprofit that helps trans and gender divergent
+                          Transnational Health is a 501(c)(3) nonprofit that helps trans and gender divergent
                           people get HRT services. We work with licensed providers to bring care to your home.
                         </AccordionContent>
                       </AccordionItem>
@@ -584,7 +584,7 @@ export default function FAQPage() {
                       </AccordionItem>
 
                       <AccordionItem value="item-27">
-                        <AccordionTrigger className="text-left">How is this legal?</AccordionTrigger>
+                        <AccordionTrigger className="text-left">Is this legal?</AccordionTrigger>
                         <AccordionContent>
                           <div className="space-y-3">
                             <p>Transnational Health operates completely within the law. Here's how:</p>
@@ -690,7 +690,7 @@ export default function FAQPage() {
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
         <p className="text-xs text-gray-600">
-          © {new Date().getFullYear()} Transnational Health Corp. A Maryland 501(c)(3) nonprofit corporation.
+          © {new Date().getFullYear()} Transnational Health Corp. A 501(c)(3) nonprofit corporation.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <a

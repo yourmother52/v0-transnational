@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Heart, Shield, CheckCircle, Phone } from "lucide-react"
+import { Heart, Shield, CheckCircle, Phone } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumbs } from "../components/breadcrumbs"
@@ -9,7 +9,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "About Us - Transnational Health",
   description:
-    "Learn about Transnational Health Corp, a Maryland 501(c)(3) nonprofit organization committed to providing accessible, affirming hormone replacement therapy services for trans and gender divergent people.",
+    "Learn about Transnational Health Corp, a 501(c)(3) nonprofit organization committed to providing accessible, affirming hormone replacement therapy services for trans and gender divergent people.",
   openGraph: {
     title: "About Us - Transnational Health",
     description:
@@ -44,7 +44,7 @@ export default function AboutPage() {
                   About <span className="text-red-500">Transnational Health</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
-                  A Maryland 501(c)(3) nonprofit organization dedicated to providing accessible, safe, affirming hormone
+                  A 501(c)(3) nonprofit organization dedicated to providing accessible, safe, affirming hormone
                   replacement therapy services for trans and gender divergent people.
                 </p>
               </div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    As a Maryland 501(c)(3) nonprofit organization, our mission is to serve the community, not generate
+                    As a 501(c)(3) nonprofit organization, our mission is to serve the community, not generate
                     profit. This means our focus is entirely on providing quality, affordable care.
                   </p>
                 </CardContent>
@@ -298,7 +298,7 @@ export default function AboutPage() {
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
         <p className="text-xs text-gray-600">
-          © {new Date().getFullYear()} Transnational Health Corp. A Maryland 501(c)(3) nonprofit corporation.
+          © {new Date().getFullYear()} Transnational Health Corp. A 501(c)(3) nonprofit corporation.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link href="/" className="text-xs hover:underline underline-offset-4 text-gray-600">

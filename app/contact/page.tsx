@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin } from 'lucide-react'
 import { GeneralContactForm } from "../components/general-contact-form"
 import { Breadcrumbs } from "../components/breadcrumbs"
 
@@ -63,7 +63,7 @@ export default function ContactPage() {
                       >
                         844-HRTMEDS (844-478-6337)
                       </a>
-                      <p className="text-sm text-gray-600 mt-1">Available during business hours</p>
+                      <p className="text-sm text-gray-600 mt-1">Voicemail line - we'll return your message</p>
                     </div>
                   </div>
 
@@ -80,8 +80,11 @@ export default function ContactPage() {
                     <MapPin className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Location</h3>
-                      <p className="text-gray-600">Maryland, USA</p>
-                      <p className="text-sm text-gray-600 mt-1">Serving patients nationwide through telemedicine</p>
+                      <p className="text-gray-600">Headquarters: Maryland, USA</p>
+                      <p className="text-sm text-gray-600 mt-1">
+                        <strong>States we serve:</strong> Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and West Virginia
+                      </p>
+                      <p className="text-sm text-gray-600 mt-1">All services provided through telemedicine</p>
                     </div>
                   </div>
                 </div>
@@ -123,7 +126,7 @@ export default function ContactPage() {
                 loading="lazy"
               />
               <p className="text-xs text-gray-600">
-                © {new Date().getFullYear()} Transnational Health Corp. A Maryland 501(c)(3) nonprofit corporation.
+                © {new Date().getFullYear()} Transnational Health Corp. A 501(c)(3) nonprofit corporation.
               </p>
             </div>
           </div>

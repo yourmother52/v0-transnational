@@ -52,7 +52,7 @@ export default function BookingPage() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <p className="text-xs text-gray-600">
-              © {new Date().getFullYear()} Transnational Health Corp. A Maryland 501(c)(3) nonprofit corporation.
+              © {new Date().getFullYear()} Transnational Health Corp. A 501(c)(3) nonprofit corporation.
             </p>
           </div>
         </div>

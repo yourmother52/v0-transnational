@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { MapPin, Phone, Heart, Shield } from "lucide-react"
+import { MapPin, Phone, Heart, Shield } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 import { trackButtonClick, trackButtonClickVercel } from "../components/analytics"
@@ -367,7 +367,7 @@ export default function ServicesByStatePage() {
                 className="h-9 w-auto"
               />
               <p className="text-xs text-gray-600">
-                © {new Date().getFullYear()} Transnational Health Corp. A Maryland 501(c)(3) nonprofit corporation.
+                © {new Date().getFullYear()} Transnational Health Corp. A 501(c)(3) nonprofit corporation.
               </p>
             </div>
             <div className="flex items-center gap-2">

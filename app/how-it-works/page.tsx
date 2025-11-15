@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Phone, Calendar, FileText, Video, ClipboardList, Package } from "lucide-react"
+import { Phone, Calendar, FileText, Video, ClipboardList, Package } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumbs } from "../components/breadcrumbs"
@@ -273,7 +273,7 @@ export default function HowItWorksPage() {
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
         <p className="text-xs text-gray-600">
-          © {new Date().getFullYear()} Transnational Health Corp. A Maryland 501(c)(3) nonprofit corporation.
+          © {new Date().getFullYear()} Transnational Health Corp. A 501(c)(3) nonprofit corporation.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link href="/" className="text-xs hover:underline underline-offset-4 text-gray-600">

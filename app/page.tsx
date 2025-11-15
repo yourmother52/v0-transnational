@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Heart, Shield, Users, CheckCircle, Phone, Facebook, Instagram } from "lucide-react"
+import { Heart, Shield, Users, CheckCircle, Phone, Facebook, Instagram } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 import { ContactForm } from "./components/contact-form"
@@ -243,7 +243,7 @@ export default function HomePage() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-gray-600">
-                        As a Maryland 501(c)(3) nonprofit organization, our mission is to serve the community, not
+                        As a 501(c)(3) nonprofit organization, our mission is to serve the community, not
                         generate profit. This means our focus is entirely on providing quality, affordable care.
                       </p>
                     </CardContent>
@@ -397,7 +397,7 @@ export default function HomePage() {
                   loading="lazy"
                 />
                 <p className="text-xs text-gray-600">
-                  © {new Date().getFullYear()} Transnational Health Corp. A Maryland 501(c)(3) nonprofit corporation.
+                  © {new Date().getFullYear()} Transnational Health Corp. A 501(c)(3) nonprofit corporation.
                 </p>
               </div>
               <div className="flex items-center gap-2">
