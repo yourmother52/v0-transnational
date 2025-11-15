@@ -80,8 +80,7 @@ export default function ContactPage() {
                     <MapPin className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Location</h3>
-                      <p className="text-gray-600">Headquarters: Maryland, USA</p>
-                      <p className="text-sm text-gray-600 mt-1">
+                      <p className="text-sm text-gray-600">
                         <strong>States we serve:</strong> Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and West Virginia
                       </p>
                       <p className="text-sm text-gray-600 mt-1">All services provided through telemedicine</p>
