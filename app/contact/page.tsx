@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Phone, Mail, MapPin } from "lucide-react"
 import { GeneralContactForm } from "../components/general-contact-form"
 import { Breadcrumbs } from "../components/breadcrumbs"
 
@@ -101,7 +101,8 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900">Location</h3>
                       <p className="text-sm text-gray-600">
-                        <strong>States we serve:</strong> Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and West Virginia
+                        <strong>States we serve:</strong> Alabama, Arkansas, Idaho, Indiana, Louisiana, Maryland,
+                        Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington DC, and West Virginia
                       </p>
                       <p className="text-sm text-gray-600 mt-1">All services provided through telemedicine</p>
                     </div>

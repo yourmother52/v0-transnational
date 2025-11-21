@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { MapPin, Phone, Heart, Shield } from 'lucide-react'
+import { MapPin, Phone, Heart, Shield } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { trackButtonClick, trackButtonClickVercel } from "../components/analytics"
@@ -46,6 +46,13 @@ export default function ServicesByStatePage() {
       keywords: "HRT Louisiana, hormone therapy Louisiana, transgender healthcare Louisiana, HRT New Orleans",
     },
     {
+      name: "Maryland",
+      slug: "maryland",
+      description:
+        "Comprehensive hormone replacement therapy services for trans and gender divergent people throughout Maryland. We serve Baltimore, Annapolis, Silver Spring, Rockville, Frederick, and all Maryland communities with safe, affirming HRT care.",
+      keywords: "HRT Maryland, hormone therapy Maryland, transgender healthcare Maryland, HRT Baltimore, HRT Annapolis",
+    },
+    {
       name: "Missouri",
       slug: "missouri",
       description:
@@ -82,6 +89,13 @@ export default function ServicesByStatePage() {
       keywords: "HRT South Dakota, hormone therapy South Dakota, transgender healthcare South Dakota, HRT Sioux Falls",
     },
     {
+      name: "Washington, DC",
+      slug: "washington-dc",
+      description:
+        "Professional hormone replacement therapy services for trans and gender divergent people in Washington, DC. We serve all neighborhoods and communities in the District of Columbia with compassionate, affirming HRT care through telemedicine.",
+      keywords: "HRT Washington DC, hormone therapy DC, transgender healthcare Washington, HRT District of Columbia",
+    },
+    {
       name: "West Virginia",
       slug: "west-virginia",
       description:
@@ -102,7 +116,7 @@ export default function ServicesByStatePage() {
             "@type": "MedicalWebPage",
             name: "HRT Services by State - Hormone Replacement Therapy",
             description:
-              "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people across Alabama, Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and West Virginia.",
+              "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people across Alabama, Arkansas, Idaho, Indiana, Louisiana, Maryland, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington DC, and West Virginia.",
             specialty: "Endocrinology",
             about: {
               "@type": "MedicalTherapy",
@@ -120,11 +134,13 @@ export default function ServicesByStatePage() {
               { "@type": "State", name: "Idaho" },
               { "@type": "State", name: "Indiana" },
               { "@type": "State", name: "Louisiana" },
+              { "@type": "State", name: "Maryland" },
               { "@type": "State", name: "Missouri" },
               { "@type": "State", name: "Montana" },
               { "@type": "State", name: "North Dakota" },
               { "@type": "State", name: "Oklahoma" },
               { "@type": "State", name: "South Dakota" },
+              { "@type": "City", name: "Washington, DC" },
               { "@type": "State", name: "West Virginia" },
             ],
           }),
@@ -151,8 +167,9 @@ export default function ServicesByStatePage() {
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl leading-relaxed">
                     Compassionate hormone replacement therapy for trans and gender divergent people in Alabama,
-                    Arkansas, Idaho, Indiana, Louisiana, Missouri, Montana, North Dakota, Oklahoma, South Dakota, and
-                    West Virginia. Licensed healthcare providers delivering safe, affirming HRT through telemedicine.
+                    Arkansas, Idaho, Indiana, Louisiana, Maryland, Missouri, Montana, North Dakota, Oklahoma, South
+                    Dakota, Washington DC, and West Virginia. Licensed healthcare providers delivering safe, affirming
+                    HRT through telemedicine.
                   </p>
                   <div className="flex items-center justify-center gap-2 pt-4">
                     <Phone className="h-5 w-5 text-blue-600" />
