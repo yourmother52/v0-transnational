@@ -75,7 +75,7 @@ export default function FormCompletePage() {
 
                     <Button asChild size="lg" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white">
                       <a
-                        href="https://transnational.intakeq.com/"
+                        href="https://transnational.intakeq.com/connect"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2"
