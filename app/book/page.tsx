@@ -1,6 +1,7 @@
 "use client"
 
 import { Breadcrumbs } from "../components/breadcrumbs"
+import Script from "next/script"
 
 export default function BookingPage() {
   const breadcrumbItems = [
@@ -10,6 +11,24 @@ export default function BookingPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Script
+        id="intakeq-widget"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function (c) {
+              window.intakeq="68ab6cbb8104bbc3616cfb0b";
+              window.intakeqServiceId="05015bfe-f8d1-43e5-b319-f0e449e28cbb";
+              var i = c.createElement("script");
+              i.type = "text/javascript";
+              i.async = true;
+              i.src = "https://intakeq.com/js/widget.min.js?1";
+              document.head.appendChild(i);
+            })(document);
+          `,
+        }}
+      />
+
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50"
@@ -34,15 +53,8 @@ export default function BookingPage() {
 
         <section className="w-full py-12 md:py-16">
           <div className="container px-4 md:px-6">
-            <div className="max-w-3xl mx-auto">
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-8 md:p-12 text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  Coming Soon
-                </h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  We are getting this form online momentarily so you can book for December! Please check back in a few days.
-                </p>
-              </div>
+            <div className="flex justify-center">
+              <div id="intakeq" style={{ maxWidth: "720px", width: "100%" }}></div>
             </div>
           </div>
         </section>
