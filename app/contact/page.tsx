@@ -73,12 +73,12 @@ export default function ContactPage() {
 
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <Phone className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
+                    <Phone className="h-6 w-6 text-brand-blue mt-1" aria-hidden="true" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Phone</h3>
                       <a
                         href="tel:+18444786337"
-                        className="text-blue-600 hover:text-blue-700 hover:underline"
+                        className="text-brand-blue hover:text-brand-blue-hover hover:underline"
                         aria-label="Call 844-HRTMEDS"
                       >
                         844-HRTMEDS (844-478-6337)
@@ -88,7 +88,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start space-x-3">
-                    <Mail className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
+                    <Mail className="h-6 w-6 text-brand-blue mt-1" aria-hidden="true" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
                       <p className="text-gray-600">Use the contact form to send us a message</p>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start space-x-3">
-                    <MapPin className="h-6 w-6 text-blue-600 mt-1" aria-hidden="true" />
+                    <MapPin className="h-6 w-6 text-brand-blue mt-1" aria-hidden="true" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Location</h3>
                       <p className="text-sm text-gray-600">
@@ -107,14 +107,6 @@ export default function ContactPage() {
                       <p className="text-sm text-gray-600 mt-1">All services provided through telemedicine</p>
                     </div>
                   </div>
-                </div>
-
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-6">
-                  <h3 className="font-semibold text-blue-900 mb-2">Launching November 30, 2025</h3>
-                  <p className="text-sm text-blue-800">
-                    We're preparing to launch our services on November 30, 2025. Contact us now if you have any
-                    questions or want to learn more about our HRT services.
-                  </p>
                 </div>
               </div>
 
@@ -159,7 +151,7 @@ export default function ContactPage() {
                 href="https://app.termly.io/policy-viewer/policy.html?policyUUID=d9fa3e4b-2e14-407d-b5c3-a64fe2e8f201"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
               >
                 Privacy Policy
               </a>
@@ -169,7 +161,7 @@ export default function ContactPage() {
                 href="https://app.termly.io/policy-viewer/policy.html?policyUUID=a007ab9b-b070-4ffb-8d93-3e91e6854ef0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
               >
                 Return Policy
               </a>
@@ -179,7 +171,7 @@ export default function ContactPage() {
                 href="https://app.termly.io/policy-viewer/policy.html?policyUUID=eae7430a-70bf-4a6e-91f2-a44bf123dd64"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
               >
                 Shipping Policy
               </a>
@@ -189,7 +181,7 @@ export default function ContactPage() {
                 href="https://app.termly.io/policy-viewer/policy.html?policyUUID=2448e4b4-8b92-4fc1-9b71-183f813c1dcd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
               >
                 Terms and Conditions
               </a>
@@ -199,7 +191,7 @@ export default function ContactPage() {
                 href="https://app.termly.io/policy-viewer/policy.html?policyUUID=3867c807-36ed-4324-aa67-9efd33f5959d"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
               >
                 Disclaimer
               </a>
@@ -209,7 +201,7 @@ export default function ContactPage() {
                 href="https://app.termly.io/policy-viewer/policy.html?policyUUID=3f08a9a2-6996-4382-9872-df135b50f88f"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
               >
                 Acceptable Use Policy
               </a>

@@ -105,7 +105,7 @@ export default function FAQPage() {
 
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-blue text-white px-4 py-2 rounded z-50"
       >
         Skip to main content
       </a>
@@ -118,12 +118,12 @@ export default function FAQPage() {
       />
 
       <main id="main-content" className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-100 via-white to-red-100">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-brand-blue/10 via-background to-brand-red/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-gray-900 text-balance">
-                  Frequently Asked <span className="text-red-500">Questions</span>
+                  Frequently Asked <span className="text-brand-red">Questions</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl text-pretty">
                   Find answers to common questions about our HRT services. Can't find what you're looking for? Contact
@@ -251,7 +251,7 @@ export default function FAQPage() {
                         <AccordionContent>
                           First, call us to talk with our HRT coordinator. They will set up your file and answer your
                           questions. Then you'll book a video visit with a provider. Check out our{" "}
-                          <Link href="/how-it-works" className="text-blue-600 hover:underline">
+                          <Link href="/how-it-works" className="text-brand-blue hover:underline">
                             How It Works
                           </Link>{" "}
                           page for all the steps.
@@ -399,7 +399,7 @@ export default function FAQPage() {
                               offer a sliding scale discount program (see below) to make care more affordable. We want
                               everyone to get the care they need. Talk to us about your situation.
                             </p>
-                            <div className="mt-3 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                            <div className="mt-3 p-4 bg-brand-blue/10 rounded-lg border border-brand-blue/20">
                               <p className="font-semibold text-gray-900 mb-2">Need additional financial assistance?</p>
                               <p className="text-sm text-gray-700 mb-2">
                                 If you need more help than our sliding scale can provide, check out this resource page
@@ -409,7 +409,7 @@ export default function FAQPage() {
                                 href="https://southernequality.org/resources/transinthesouth/funding-your-transition/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline font-medium text-sm"
+                                className="text-brand-blue hover:underline font-medium text-sm"
                               >
                                 Campaign for Southern Equality - Funding Your Transition
                               </a>
@@ -435,7 +435,7 @@ export default function FAQPage() {
                               <strong>Please note:</strong> These discounts apply only to medical visit costs (initial
                               and follow-up visits). They do not apply to the cost of medications or lab work.
                             </p>
-                            <div className="mt-3 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                            <div className="mt-3 p-4 bg-brand-blue/10 rounded-lg border border-brand-blue/20">
                               <p className="font-semibold text-gray-900 mb-2">Need additional financial assistance?</p>
                               <p className="text-sm text-gray-700 mb-2">
                                 If you need more help than our sliding scale can provide, check out this resource page
@@ -445,7 +445,7 @@ export default function FAQPage() {
                                 href="https://southernequality.org/resources/transinthesouth/funding-your-transition/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline font-medium text-sm"
+                                className="text-brand-blue hover:underline font-medium text-sm"
                               >
                                 Campaign for Southern Equality - Funding Your Transition
                               </a>
@@ -696,7 +696,7 @@ export default function FAQPage() {
                               clinicians can legally provide HRT services and send medications to patients who need
                               them, even in states with restrictive local laws.
                             </p>
-                            <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                            <div className="mt-4 p-4 bg-brand-blue/10 rounded-lg border border-brand-blue/20">
                               <p className="font-semibold text-gray-900 mb-2">
                                 Questions about your personal legal risk?
                               </p>
@@ -710,7 +710,7 @@ export default function FAQPage() {
                                     href="https://www.nclrights.org/get-help/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-blue-600 hover:underline font-medium"
+                                    className="text-brand-blue hover:underline font-medium"
                                   >
                                     National Center for Lesbian Rights - Get Help
                                   </a>
@@ -720,7 +720,7 @@ export default function FAQPage() {
                                     href="https://lambdalegal.org/helpdesk/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-blue-600 hover:underline font-medium"
+                                    className="text-brand-blue hover:underline font-medium"
                                   >
                                     Lambda Legal - Help Desk
                                   </a>
@@ -738,7 +738,7 @@ export default function FAQPage() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-red-500 to-blue-600">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-brand-red to-brand-blue">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <div className="space-y-4">
@@ -750,7 +750,7 @@ export default function FAQPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100" asChild>
+                <Button size="lg" className="bg-white text-brand-red hover:bg-gray-100" asChild>
                   <Link href="/contact">Contact Us</Link>
                 </Button>
                 <Button

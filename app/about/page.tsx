@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Heart, Shield, CheckCircle, Phone } from 'lucide-react'
+import { Heart, Shield, CheckCircle, Phone } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumbs } from "../components/breadcrumbs"
@@ -48,7 +48,7 @@ export default function AboutPage() {
     <div className="flex flex-col min-h-screen">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-blue text-white px-4 py-2 rounded z-50"
       >
         Skip to main content
       </a>
@@ -66,7 +66,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-gray-900">
-                  About <span className="text-red-500">Transnational Health</span>
+                  About <span className="text-brand-red">Transnational Health</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
                   A 501(c)(3) nonprofit organization dedicated to providing accessible, safe, affirming hormone
@@ -78,7 +78,7 @@ export default function AboutPage() {
         </section>
 
         <section
-          className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-r from-red-500 to-blue-600"
+          className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-r from-brand-red to-brand-blue"
           aria-labelledby="mission-statement-heading"
         >
           <div className="container px-4 md:px-6">
@@ -119,20 +119,20 @@ export default function AboutPage() {
             <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-8">
               <Card className="text-center">
                 <CardHeader>
-                  <CheckCircle className="h-12 w-12 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+                  <CheckCircle className="h-12 w-12 text-brand-blue mx-auto mb-2" aria-hidden="true" />
                   <CardTitle>Nonprofit Mission</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    As a 501(c)(3) nonprofit organization, our mission is to serve the community, not generate
-                    profit. This means our focus is entirely on providing quality, affordable care.
+                    As a 501(c)(3) nonprofit organization, our mission is to serve the community, not generate profit.
+                    This means our focus is entirely on providing quality, affordable care.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="text-center">
                 <CardHeader>
-                  <Shield className="h-12 w-12 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+                  <Shield className="h-12 w-12 text-brand-blue mx-auto mb-2" aria-hidden="true" />
                   <CardTitle>Licensed Providers</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -146,7 +146,7 @@ export default function AboutPage() {
 
               <Card className="text-center">
                 <CardHeader>
-                  <Heart className="h-12 w-12 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+                  <Heart className="h-12 w-12 text-brand-blue mx-auto mb-2" aria-hidden="true" />
                   <CardTitle>Community Focused</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -226,7 +226,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32" aria-labelledby="transparency-heading">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50" aria-labelledby="transparency-heading">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -253,7 +253,7 @@ export default function AboutPage() {
                     href="https://app.candid.org/profile/16349599/transnational-health-corp"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded"
+                    className="inline-block transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded"
                     aria-label="View our Candid profile and transparency information"
                   >
                     <Image
@@ -298,10 +298,10 @@ export default function AboutPage() {
                   Have questions about our organization or services? We'd love to hear from you.
                 </p>
                 <div className="flex items-center justify-center gap-2 pt-4">
-                  <Phone className="h-5 w-5 text-blue-600" aria-hidden="true" />
+                  <Phone className="h-5 w-5 text-brand-blue" aria-hidden="true" />
                   <a
                     href="tel:+18444786337"
-                    className="text-lg font-semibold text-blue-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-2 py-1"
+                    className="text-lg font-semibold text-brand-blue hover:text-brand-blue-hover hover:underline focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-2 py-1"
                     aria-label="Call 844-HRTMEDS"
                   >
                     844-HRTMEDS
@@ -309,7 +309,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="space-x-4 pt-4">
-                <Button size="lg" className="bg-red-500 hover:bg-red-600" asChild>
+                <Button size="lg" className="bg-brand-red hover:bg-brand-red-hover" asChild>
                   <Link href="/#contact">Contact Us</Link>
                 </Button>
                 <Button variant="outline" size="lg" className="bg-transparent" asChild>

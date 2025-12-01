@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         success: true,
-        message: "Thank you for your interest! We're launching November 30, 2025 and will keep you updated.",
+        message: "Thank you for your interest! We'll keep you updated.",
       },
       { status: 200 },
     )

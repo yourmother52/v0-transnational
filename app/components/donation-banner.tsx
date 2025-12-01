@@ -7,7 +7,7 @@ export function DonationBanner() {
   return (
     <div className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-3 px-4 text-center">
       <div className="container mx-auto flex items-center justify-center gap-4 flex-wrap">
-        <span className="text-sm md:text-base font-medium">Support our mission to provide accessible HRT services</span>
+        <span className="text-sm md:text-base font-medium">HRT is Essential!</span>
         <Button size="sm" variant="secondary" className="bg-white text-red-600 hover:bg-gray-100 font-semibold" asChild>
           <a
             href="https://givebutter.com/fyZJf5"

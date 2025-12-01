@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Phone, Calendar, FileText, Video, ClipboardList, Package } from 'lucide-react'
+import { Phone, Calendar, FileText, Video, ClipboardList, Package } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumbs } from "../components/breadcrumbs"
@@ -50,8 +50,8 @@ export default function HowItWorksPage() {
       description:
         "Talk to our HRT coordinator on the phone. We'll set up your file and answer your questions. We'll also help you know what to expect.",
       icon: Phone,
-      color: "text-blue-600",
-      bgColor: "bg-blue-50",
+      color: "text-brand-blue",
+      bgColor: "bg-brand-blue/10",
     },
     {
       number: 2,
@@ -59,8 +59,8 @@ export default function HowItWorksPage() {
       description:
         "Pick a time that works for you to meet with one of our providers. All our providers are licensed and ready to help.",
       icon: Calendar,
-      color: "text-red-500",
-      bgColor: "bg-red-50",
+      color: "text-brand-red",
+      bgColor: "bg-brand-red/10",
     },
     {
       number: 3,
@@ -68,8 +68,8 @@ export default function HowItWorksPage() {
       description:
         "After you book your visit, we'll send you a form online. Tell us about yourself, your health, and your goals. Take your time filling it out.",
       icon: FileText,
-      color: "text-blue-600",
-      bgColor: "bg-blue-50",
+      color: "text-brand-blue",
+      bgColor: "bg-brand-blue/10",
     },
     {
       number: 4,
@@ -77,8 +77,8 @@ export default function HowItWorksPage() {
       description:
         "Talk to your provider on a video call. We'll learn about where you are now and what you've tried before. We'll also talk about what you need going forward.",
       icon: Video,
-      color: "text-red-500",
-      bgColor: "bg-red-50",
+      color: "text-brand-red",
+      bgColor: "bg-brand-red/10",
     },
     {
       number: 5,
@@ -86,8 +86,8 @@ export default function HowItWorksPage() {
       description:
         "You might need to get lab work done or send us other health records. We'll tell you exactly what you need to do.",
       icon: ClipboardList,
-      color: "text-blue-600",
-      bgColor: "bg-blue-50",
+      color: "text-brand-blue",
+      bgColor: "bg-brand-blue/10",
     },
     {
       number: 6,
@@ -95,8 +95,8 @@ export default function HowItWorksPage() {
       description:
         "Your medications will come to your home in the mail. We'll give you clear instructions on how to use them. You can call us anytime with questions.",
       icon: Package,
-      color: "text-red-500",
-      bgColor: "bg-red-50",
+      color: "text-brand-red",
+      bgColor: "bg-brand-red/10",
     },
   ]
 
@@ -122,7 +122,7 @@ export default function HowItWorksPage() {
 
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-blue text-white px-4 py-2 rounded z-50"
       >
         Skip to main content
       </a>
@@ -135,19 +135,19 @@ export default function HowItWorksPage() {
       />
 
       <main id="main-content" className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-100 via-white to-red-100">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-brand-blue/10 via-background to-brand-red/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-gray-900 text-balance">
-                  How <span className="text-red-500">It Works</span>
+                  How <span className="text-brand-red">It Works</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl text-pretty">
                   Getting started with our HRT services is easy. Follow these six steps to begin your care from home.
                 </p>
               </div>
               <div className="pt-4">
-                <Button size="lg" className="bg-red-500 text-white hover:bg-red-600" asChild>
+                <Button size="lg" className="bg-brand-red text-white hover:bg-brand-red/90" asChild>
                   <Link href="/book">Book Your Intake Call Now</Link>
                 </Button>
               </div>
@@ -261,7 +261,7 @@ export default function HowItWorksPage() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-red-500 to-blue-600">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-brand-red to-brand-blue">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <div className="space-y-4">
@@ -273,7 +273,7 @@ export default function HowItWorksPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100" asChild>
+                <Button size="lg" className="bg-white text-brand-red hover:bg-gray-100" asChild>
                   <Link href="/contact">Contact Us</Link>
                 </Button>
                 <Button
@@ -306,7 +306,7 @@ export default function HowItWorksPage() {
                   Check out our FAQ page for answers to common questions about our services and process.
                 </p>
               </div>
-              <Button size="lg" className="bg-red-500 text-white hover:bg-red-600" asChild>
+              <Button size="lg" className="bg-brand-red text-white hover:bg-brand-red/90" asChild>
                 <Link href="/faq">View FAQ</Link>
               </Button>
             </div>

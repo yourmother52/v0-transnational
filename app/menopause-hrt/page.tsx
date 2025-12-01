@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Phone, CheckCircle, Thermometer, Moon, Activity } from 'lucide-react'
+import { Phone, CheckCircle, Thermometer, Moon, Activity } from "lucide-react"
 import Link from "next/link"
 import { trackButtonClick } from "../components/analytics"
 import { Breadcrumbs } from "../components/breadcrumbs"
@@ -91,12 +91,12 @@ export default function MenopauseHRTPage() {
       />
 
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-100 via-white to-red-100">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-brand-blue/10 via-background to-brand-red/10">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-gray-900">
-                  <span className="text-red-500">Menopause Hormone Replacement Therapy</span>
+                  <span className="text-brand-red">Menopause Hormone Replacement Therapy</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
                   Expert menopause HRT services for women experiencing hot flashes, night sweats, mood changes, and
@@ -106,7 +106,7 @@ export default function MenopauseHRTPage() {
                 <p className="text-lg font-semibold text-blue-600">Launching November 30, 2025</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-red-500 hover:bg-red-600" asChild>
+                <Button size="lg" className="bg-brand-red hover:bg-brand-red/90" asChild>
                   <a href="tel:844-478-6337" onClick={() => trackButtonClick("Call Now CTA", "menopause-hero")}>
                     <Phone className="h-4 w-4 mr-2" />
                     Call 844-HRTMEDS
@@ -139,7 +139,7 @@ export default function MenopauseHRTPage() {
             <div className="mx-auto grid max-w-5xl items-start gap-6 lg:grid-cols-3 lg:gap-8 mb-12">
               <Card className="text-center">
                 <CardHeader>
-                  <Thermometer className="h-12 w-12 text-blue-600 mx-auto mb-2" />
+                  <Thermometer className="h-12 w-12 text-brand-blue mx-auto mb-2" />
                   <CardTitle>Hot Flash Relief</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -152,7 +152,7 @@ export default function MenopauseHRTPage() {
 
               <Card className="text-center">
                 <CardHeader>
-                  <Moon className="h-12 w-12 text-blue-600 mx-auto mb-2" />
+                  <Moon className="h-12 w-12 text-brand-blue mx-auto mb-2" />
                   <CardTitle>Better Sleep</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -165,7 +165,7 @@ export default function MenopauseHRTPage() {
 
               <Card className="text-center">
                 <CardHeader>
-                  <Activity className="h-12 w-12 text-blue-600 mx-auto mb-2" />
+                  <Activity className="h-12 w-12 text-brand-blue mx-auto mb-2" />
                   <CardTitle>Mood Balance</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -187,7 +187,7 @@ export default function MenopauseHRTPage() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-brand-blue mt-0.5 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold">Hot Flashes & Night Sweats</h3>
                       <p className="text-sm text-gray-600">
@@ -196,7 +196,7 @@ export default function MenopauseHRTPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-brand-blue mt-0.5 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold">Mood Changes & Irritability</h3>
                       <p className="text-sm text-gray-600">
@@ -205,7 +205,7 @@ export default function MenopauseHRTPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-brand-blue mt-0.5 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold">Sleep Disturbances</h3>
                       <p className="text-sm text-gray-600">
@@ -214,7 +214,7 @@ export default function MenopauseHRTPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-brand-blue mt-0.5 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold">Vaginal Dryness</h3>
                       <p className="text-sm text-gray-600">
@@ -223,14 +223,14 @@ export default function MenopauseHRTPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-brand-blue mt-0.5 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold">Low Energy & Fatigue</h3>
                       <p className="text-sm text-gray-600">Restore energy levels and reduce persistent tiredness</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-brand-blue mt-0.5 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold">Weight Gain & Metabolism</h3>
                       <p className="text-sm text-gray-600">
@@ -270,7 +270,7 @@ export default function MenopauseHRTPage() {
                     <p className="text-gray-600 mb-4">{state.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {state.cities.map((city) => (
-                        <span key={city} className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">
+                        <span key={city} className="px-3 py-1 bg-brand-blue/10 text-brand-blue rounded-full text-sm">
                           {city}
                         </span>
                       ))}
@@ -293,7 +293,7 @@ export default function MenopauseHRTPage() {
                 healthcare providers are ready to help you find relief.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-red-500 hover:bg-red-600" asChild>
+                <Button size="lg" className="bg-brand-red hover:bg-brand-red/90" asChild>
                   <a href="tel:844-478-6337" onClick={() => trackButtonClick("Call Now CTA", "menopause-bottom")}>
                     <Phone className="h-4 w-4 mr-2" />
                     Call 844-HRTMEDS
@@ -312,11 +312,11 @@ export default function MenopauseHRTPage() {
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
         <div className="flex items-center gap-2">
-          <Image 
-            src="/logo.jpg" 
-            alt="Transnational Health Corp logo" 
-            width={120} 
-            height={64} 
+          <Image
+            src="/logo.jpg"
+            alt="Transnational Health Corp logo"
+            width={120}
+            height={64}
             className="h-9 w-auto"
             loading="lazy"
           />
@@ -327,7 +327,7 @@ export default function MenopauseHRTPage() {
         <nav className="sm:ml-auto flex items-center gap-4">
           <a
             href="tel:844-478-6337"
-            className="text-xs text-blue-600 hover:underline underline-offset-4 flex items-center gap-1"
+            className="text-xs text-brand-blue hover:underline underline-offset-4 flex items-center gap-1"
           >
             <Phone className="h-3 w-3" />
             844-HRTMEDS

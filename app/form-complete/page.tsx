@@ -33,13 +33,13 @@ export default function FormCompletePage() {
       />
 
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-green-100 via-white to-blue-100">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-success/10 via-background to-brand-blue/10">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto">
               <div className="flex flex-col items-center space-y-8 text-center">
                 {/* Success Icon */}
-                <div className="rounded-full bg-green-100 p-6">
-                  <CheckCircle className="h-16 w-16 text-green-600" aria-hidden="true" />
+                <div className="rounded-full bg-success/10 p-6">
+                  <CheckCircle className="h-16 w-16 text-success" aria-hidden="true" />
                 </div>
 
                 {/* Heading */}
@@ -62,10 +62,10 @@ export default function FormCompletePage() {
                     </p>
                   </div>
 
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 space-y-4">
+                  <div className="bg-brand-blue/10 border border-brand-blue/20 rounded-lg p-6 space-y-4">
                     <div className="space-y-2">
-                      <h3 className="font-semibold text-blue-900">Patient Portal Benefits:</h3>
-                      <ul className="text-sm text-blue-800 space-y-1 list-disc list-inside">
+                      <h3 className="font-semibold text-brand-blue">Patient Portal Benefits:</h3>
+                      <ul className="text-sm text-brand-blue/80 space-y-1 list-disc list-inside">
                         <li>Access your medical records securely</li>
                         <li>Communicate with your healthcare provider</li>
                         <li>View test results and treatment plans</li>
@@ -73,7 +73,11 @@ export default function FormCompletePage() {
                       </ul>
                     </div>
 
-                    <Button asChild size="lg" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white">
+                    <Button
+                      asChild
+                      size="lg"
+                      className="w-full sm:w-auto bg-brand-blue hover:bg-brand-blue/90 text-white"
+                    >
                       <a
                         href="https://transnational.intakeq.com/connect"
                         target="_blank"
@@ -100,7 +104,7 @@ export default function FormCompletePage() {
                 <div className="text-center space-y-2">
                   <p className="text-sm text-gray-600">
                     Have questions? Contact us at{" "}
-                    <a href="tel:+18444786337" className="text-blue-600 hover:text-blue-700 hover:underline">
+                    <a href="tel:+18444786337" className="text-brand-blue hover:text-brand-blue/80 hover:underline">
                       844-HRTMEDS (844-478-6337)
                     </a>
                   </p>

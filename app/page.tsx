@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Heart, Shield, Users, CheckCircle, Phone, Facebook, Instagram } from 'lucide-react'
+import { Heart, Shield, Users, CheckCircle, Phone, Facebook, Instagram } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { ContactForm } from "./components/contact-form"
@@ -28,7 +28,7 @@ export default function HomePage() {
             "@type": "WebPage",
             "@id": "https://transnationalhealth.org/#webpage",
             url: "https://transnationalhealth.org",
-            name: "Transnational Health - Compassionate HRT at Home",
+            name: "Transnational Health - Groove is in the HRT!",
             description:
               "Providing accessible, safe, affirming hormone replacement therapy (HRT) services for trans, nonbinary, and gender divergent folx through licensed healthcare providers. Offering testosterone, estrogen, and spironolactone with heart-centered, queer-affirming care.",
             isPartOf: {
@@ -48,14 +48,14 @@ export default function HomePage() {
       <div className="flex flex-col min-h-screen">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-blue text-white px-4 py-2 rounded z-50"
         >
           Skip to main content
         </a>
 
         <main id="main-content" className="flex-1">
           <section
-            className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-100 via-white to-red-100"
+            className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-brand-blue-light via-white to-brand-red-light"
             aria-labelledby="hero-heading"
           >
             <div className="container px-4 md:px-6">
@@ -65,19 +65,20 @@ export default function HomePage() {
                     id="hero-heading"
                     className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-gray-900"
                   >
-                    <span className="text-red-500">Compassionate HRT at Home</span>
+                    <span className="text-brand-red">Groove is in the HRT!</span>
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
-                    Providing accessible, safe, affirming HRT for trans folx and gender divergent people with licensed
-                    healthcare providers. Your journey to getting HRT at home starts here.
+                    Providing accessible, safe, affirming HRT by mail
                     <br />
-                    <strong>Launching November 30, 2025.</strong>
+                    with licensed healthcare providers.
+                    <br />
+                    HRT @ home starts here.
                   </p>
                 </div>
                 <div className="space-x-4">
                   <Button
                     size="lg"
-                    className="bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
+                    className="bg-brand-red hover:bg-brand-red-hover focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2"
                     asChild
                   >
                     <Link href="/book">Book Now!</Link>
@@ -85,7 +86,7 @@ export default function HomePage() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 bg-transparent"
+                    className="focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 bg-transparent"
                     asChild
                   >
                     <Link href="#services">Learn About Our Services</Link>
@@ -113,7 +114,7 @@ export default function HomePage() {
                 <article className="border-blue-200">
                   <Card>
                     <CardHeader>
-                      <Heart className="h-10 w-10 text-blue-600 mb-2" aria-hidden="true" />
+                      <Heart className="h-10 w-10 text-brand-blue mb-2" aria-hidden="true" />
                       <CardTitle className="text-xl">Hormone Replacement Therapy (HRT)</CardTitle>
                       <CardDescription>
                         Comprehensive HRT services tailored to your individual needs and goals.
@@ -147,7 +148,7 @@ export default function HomePage() {
                 <article className="border-blue-200">
                   <Card>
                     <CardHeader>
-                      <Shield className="h-10 w-10 text-blue-600 mb-2" aria-hidden="true" />
+                      <Shield className="h-10 w-10 text-brand-blue mb-2" aria-hidden="true" />
                       <CardTitle className="text-xl">Licensed Clinical Care</CardTitle>
                       <CardDescription>
                         All services provided through partnerships with licensed healthcare professionals specializing
@@ -176,7 +177,7 @@ export default function HomePage() {
                 <article className="border-blue-200 lg:col-span-2">
                   <Card>
                     <CardHeader>
-                      <Users className="h-10 w-10 text-blue-600 mb-2" aria-hidden="true" />
+                      <Users className="h-10 w-10 text-brand-blue mb-2" aria-hidden="true" />
                       <CardTitle className="text-xl">Comprehensive Care Approach</CardTitle>
                       <CardDescription>
                         We believe in treating the whole person, not just providing medication. Our holistic approach
@@ -238,13 +239,13 @@ export default function HomePage() {
                 <article className="text-center">
                   <Card>
                     <CardHeader>
-                      <CheckCircle className="h-12 w-12 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+                      <CheckCircle className="h-12 w-12 text-brand-blue mx-auto mb-2" aria-hidden="true" />
                       <CardTitle>Nonprofit Mission</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-gray-600">
-                        As a 501(c)(3) nonprofit organization, our mission is to serve the community, not
-                        generate profit. This means our focus is entirely on providing quality, affordable care.
+                        As a 501(c)(3) nonprofit organization, our mission is to serve the community, not generate
+                        profit. This means our focus is entirely on providing quality, affordable care.
                       </p>
                     </CardContent>
                   </Card>
@@ -253,7 +254,7 @@ export default function HomePage() {
                 <article className="text-center">
                   <Card>
                     <CardHeader>
-                      <Shield className="h-12 w-12 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+                      <Shield className="h-12 w-12 text-brand-blue mx-auto mb-2" aria-hidden="true" />
                       <CardTitle>Licensed Providers</CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -268,7 +269,7 @@ export default function HomePage() {
                 <article className="text-center">
                   <Card>
                     <CardHeader>
-                      <Heart className="h-12 w-12 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+                      <Heart className="h-12 w-12 text-brand-blue mx-auto mb-2" aria-hidden="true" />
                       <CardTitle>Community Focused</CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -314,7 +315,7 @@ export default function HomePage() {
                       href="https://app.candid.org/profile/16349599/transnational-health-corp"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded"
+                      className="inline-block transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded"
                       aria-label="View our Candid profile and transparency information"
                       onClick={() => trackButtonClick("Candid Seal", "partnerships")}
                     >
@@ -362,10 +363,10 @@ export default function HomePage() {
                     to you as soon as possible.
                   </p>
                   <div className="flex items-center justify-center gap-2 pt-4">
-                    <Phone className="h-5 w-5 text-blue-600" aria-hidden="true" />
+                    <Phone className="h-5 w-5 text-brand-blue" aria-hidden="true" />
                     <a
                       href="tel:+18444786337"
-                      className="text-lg font-semibold text-blue-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-2 py-1"
+                      className="text-lg font-semibold text-brand-blue hover:text-brand-blue-hover hover:underline focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-2 py-1"
                       aria-label="Call 844-HRTMEDS"
                       onClick={() => trackButtonClick("Phone Footer", "footer")}
                     >
@@ -404,7 +405,7 @@ export default function HomePage() {
                 <Phone className="h-4 w-4 text-gray-600" aria-hidden="true" />
                 <a
                   href="tel:+18444786337"
-                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
                   aria-label="Call 844-HRTMEDS"
                   onClick={() => trackButtonClick("Phone Footer", "footer")}
                 >
@@ -415,10 +416,10 @@ export default function HomePage() {
 
             <div className="flex items-center gap-4">
               <a
-                href="https://www.facebook.com/transnationalhealth"
+                href="https://www.facebook.com/people/Transnational-Health/61569928829813/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded p-1"
+                className="text-gray-600 hover:text-brand-blue transition-colors focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded p-1"
                 aria-label="Follow us on Facebook"
                 onClick={() => trackButtonClick("Facebook", "footer")}
               >
@@ -428,7 +429,7 @@ export default function HomePage() {
                 href="https://www.instagram.com/transnationalhealth/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-pink-600 transition-colors focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 rounded p-1"
+                className="text-gray-600 hover:text-destructive transition-colors focus:outline-none focus:ring-2 focus:ring-destructive focus:ring-offset-2 rounded p-1"
                 aria-label="Follow us on Instagram"
                 onClick={() => trackButtonClick("Instagram", "footer")}
               >
@@ -438,7 +439,7 @@ export default function HomePage() {
                 href="https://bsky.app/profile/transnationalhrt.bsky.social"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-500 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded p-1"
+                className="text-gray-600 hover:text-brand-blue-muted transition-colors focus:outline-none focus:ring-2 focus:ring-brand-blue-muted focus:ring-offset-2 rounded p-1"
                 aria-label="Follow us on Bluesky"
                 onClick={() => trackButtonClick("Bluesky", "footer")}
               >
@@ -454,7 +455,7 @@ export default function HomePage() {
                   href="https://app.termly.io/policy-viewer/policy.html?policyUUID=d9fa3e4b-2e14-407d-b5c3-a64fe2e8f201"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
                 >
                   Privacy Policy
                 </a>
@@ -464,7 +465,7 @@ export default function HomePage() {
                   href="https://app.termly.io/policy-viewer/policy.html?policyUUID=a007ab9b-b070-4ffb-8d93-3e91e6854ef0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
                 >
                   Return Policy
                 </a>
@@ -474,7 +475,7 @@ export default function HomePage() {
                   href="https://app.termly.io/policy-viewer/policy.html?policyUUID=eae7430a-70bf-4a6e-91f2-a44bf123dd64"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
                 >
                   Shipping Policy
                 </a>
@@ -484,7 +485,7 @@ export default function HomePage() {
                   href="https://app.termly.io/policy-viewer/policy.html?policyUUID=2448e4b4-8b92-4fc1-9b71-183f813c1dcd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
                 >
                   Terms and Conditions
                 </a>
@@ -494,7 +495,7 @@ export default function HomePage() {
                   href="https://app.termly.io/policy-viewer/policy.html?policyUUID=3867c807-36ed-4324-aa67-9efd33f5959d"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
                 >
                   Disclaimer
                 </a>
@@ -504,7 +505,7 @@ export default function HomePage() {
                   href="https://app.termly.io/policy-viewer/policy.html?policyUUID=3f08a9a2-6996-4382-9872-df135b50f88f"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded px-1 py-1"
+                  className="text-xs hover:underline underline-offset-4 text-gray-600 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded px-1 py-1"
                 >
                   Acceptable Use Policy
                 </a>

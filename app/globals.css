@@ -1,5 +1,7 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
   --background: hsl(0 0% 100%);
@@ -26,7 +28,35 @@
   --chart-3: hsl(197 37% 24%);
   --chart-4: hsl(43 74% 66%);
   --chart-5: hsl(27 87% 67%);
+  /* Added brand color tokens for blue and red */
+  --brand-blue: hsl(221.2 83.2% 53.3%);
+  --brand-blue-foreground: hsl(0 0% 100%);
+  --brand-blue-hover: hsl(221.2 83.2% 45%);
+  --brand-blue-light: hsl(214 100% 97%);
+  --brand-blue-muted: hsl(217.2 91.2% 59.8%);
+  --brand-red: hsl(0 84.2% 60.2%);
+  --brand-red-foreground: hsl(0 0% 100%);
+  --brand-red-hover: hsl(0 84.2% 50%);
+  --brand-red-light: hsl(0 86% 97%);
+  --brand-red-muted: hsl(0 72.2% 50.6%);
+  --success: hsl(142 71% 45%);
+  --success-foreground: hsl(0 0% 100%);
+  --success-light: hsl(143 85% 96%);
+  --success-dark: hsl(142 71% 25%);
+  --warning: hsl(38 92% 50%);
+  --warning-foreground: hsl(0 0% 100%);
+  --info: hsl(221.2 83.2% 53.3%);
+  --info-foreground: hsl(0 0% 100%);
+  --info-light: hsl(214 100% 97%);
   --radius: 0.5rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
 .dark {
@@ -54,9 +84,38 @@
   --chart-3: hsl(30 80% 55%);
   --chart-4: hsl(280 65% 60%);
   --chart-5: hsl(340 75% 55%);
+  /* Added dark mode brand colors */
+  --brand-blue: hsl(217.2 91.2% 59.8%);
+  --brand-blue-foreground: hsl(222.2 47.4% 11.2%);
+  --brand-blue-hover: hsl(217.2 91.2% 69.8%);
+  --brand-blue-light: hsl(215 27.9% 16.9%);
+  --brand-blue-muted: hsl(217.2 91.2% 59.8%);
+  --brand-red: hsl(0 72.2% 50.6%);
+  --brand-red-foreground: hsl(0 0% 100%);
+  --brand-red-hover: hsl(0 72.2% 60.6%);
+  --brand-red-light: hsl(0 62.8% 20.6%);
+  --brand-red-muted: hsl(0 72.2% 50.6%);
+  --success: hsl(142 71% 45%);
+  --success-foreground: hsl(0 0% 100%);
+  --success-light: hsl(143 64% 24%);
+  --success-dark: hsl(142 71% 35%);
+  --warning: hsl(38 92% 50%);
+  --warning-foreground: hsl(0 0% 100%);
+  --info: hsl(217.2 91.2% 59.8%);
+  --info-foreground: hsl(222.2 47.4% 11.2%);
+  --info-light: hsl(215 27.9% 16.9%);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
 }
 
-@theme {
+@theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -81,10 +140,47 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
+  /* Added brand color mappings to @theme */
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-foreground: var(--brand-blue-foreground);
+  --color-brand-blue-hover: var(--brand-blue-hover);
+  --color-brand-blue-light: var(--brand-blue-light);
+  --color-brand-blue-muted: var(--brand-blue-muted);
+  --color-brand-red: var(--brand-red);
+  --color-brand-red-foreground: var(--brand-red-foreground);
+  --color-brand-red-hover: var(--brand-red-hover);
+  --color-brand-red-light: var(--brand-red-light);
+  --color-brand-red-muted: var(--brand-red-muted);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-light: var(--success-light);
+  --color-success-dark: var(--success-dark);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-info-light: var(--info-light);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
 * {
