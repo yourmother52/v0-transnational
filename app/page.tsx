@@ -68,9 +68,7 @@ export default function HomePage() {
                     <span className="text-brand-red">Groove is in the HRT!</span>
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
-                    Providing accessible, safe, affirming HRT by mail
-                    <br />
-                    with licensed healthcare providers.
+                    Improving access to HRT services through partnership with health care providers.
                     <br />
                     HRT @ home starts here.
                   </p>
@@ -104,9 +102,8 @@ export default function HomePage() {
                     What We Do
                   </h2>
                   <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    We provide comprehensive hormone replacement therapy services specifically designed for trans,
-                    nonbinary, and gender divergent people, delivered through partnerships with licensed queer-affirming
-                    healthcare providers.
+                    We help facilitate you getting comprehensive healthcare services through our network of licensed and
+                    queer affirming healthcare providers.
                   </p>
                 </div>
               </div>
@@ -230,7 +227,7 @@ export default function HomePage() {
                     Why Choose Us
                   </h2>
                   <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    We are committed to providing accessible, affirming healthcare services to the trans and gender
+                    We are committed to facilitating accessible, affirming healthcare services to the trans and gender
                     divergent community through our nonprofit mission and clinical partnerships.
                   </p>
                 </div>
