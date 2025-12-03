@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import { usePathname, useSearchParams } from "next/navigation"
-import { track } from "@vercel/analytics"
+import { track } from "@vercel/analytics/react"
 
 declare global {
   interface Window {
