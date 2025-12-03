@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next/metadata"
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google"
 import "./globals.css"
 import { Analytics } from "./components/analytics"
 import { ErrorBoundary } from "./components/error-boundary"
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | Transnational Health",
   },
   description:
-    "Providing accessible, safe, affirming hormone replacement therapy (HRT) services for trans and gender divergent people through licensed healthcare providers. Opening late 2025.",
+    "Improving access to HRT services through partnership with health care providers for trans and gender divergent people. Opening late 2025.",
   keywords: [
     "HRT",
     "hormone replacement therapy",
@@ -149,7 +149,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://transnationalhealth.org",
     languages: {
-      "en-US": "https://transnationalhealth.org",
+      en: "https://transnationalhealth.org",
+      "x-default": "https://transnationalhealth.org",
     },
   },
   icons: {
@@ -326,6 +327,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
       </head>
       <body className={inter.className}>
         <Suspense fallback={<div>Loading...</div>}>

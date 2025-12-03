@@ -4,6 +4,8 @@ import { Phone, Mail, MapPin } from "lucide-react"
 import { GeneralContactForm } from "../components/general-contact-form"
 import { Breadcrumbs } from "../components/breadcrumbs"
 
+export const revalidate = 86400 // 24 hours
+
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
@@ -33,6 +35,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://transnationalhealth.org/contact",
+    languages: {
+      en: "https://transnationalhealth.org/contact",
+    },
   },
 }
 

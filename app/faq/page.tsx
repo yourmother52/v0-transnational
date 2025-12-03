@@ -7,6 +7,8 @@ import Image from "next/image"
 import { Breadcrumbs } from "../components/breadcrumbs"
 import type { Metadata } from "next"
 
+export const revalidate = 86400 // 24 hours
+
 export const metadata: Metadata = {
   title: "Frequently Asked Questions - Transnational Health",
   description:
@@ -40,6 +42,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://transnationalhealth.org/faq",
+    languages: {
+      en: "https://transnationalhealth.org/faq",
+    },
   },
 }
 
@@ -61,7 +66,7 @@ export default function FAQPage() {
         name: "Who can use your services?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Our services are for trans and gender divergent people who need HRT. We help people in Alabama, Arkansas, Florida, Idaho, Indiana, Louisiana, Maryland, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington DC, and West Virginia.",
+          text: "Our services are for trans and gender divergent people who need HRT. We help people in Alabama, Arkansas, Florida, Idaho, Indiana, Iowa, Louisiana, Maryland, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington DC, and West Virginia.",
         },
       },
       {
@@ -193,8 +198,8 @@ export default function FAQPage() {
                         <AccordionTrigger className="text-left">Who can use your services?</AccordionTrigger>
                         <AccordionContent>
                           Our services are for trans and gender divergent people who need HRT. We help people in
-                          Alabama, Arkansas, Florida, Idaho, Indiana, Louisiana, Maryland, Missouri, Montana, North
-                          Dakota, Oklahoma, South Dakota, Washington DC, and West Virginia.
+                          Alabama, Arkansas, Florida, Idaho, Indiana, Iowa, Louisiana, Maryland, Missouri, Montana,
+                          North Dakota, Oklahoma, South Dakota, Washington DC, and West Virginia.
                         </AccordionContent>
                       </AccordionItem>
 
@@ -204,8 +209,8 @@ export default function FAQPage() {
                         </AccordionTrigger>
                         <AccordionContent>
                           Yes. Right now we can only help people who live in Alabama, Arkansas, Florida, Idaho, Indiana,
-                          Louisiana, Maryland, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington DC,
-                          or West Virginia. This is because of state laws about healthcare.
+                          Iowa, Louisiana, Maryland, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington
+                          DC, or West Virginia. This is because of state laws about healthcare.
                         </AccordionContent>
                       </AccordionItem>
 

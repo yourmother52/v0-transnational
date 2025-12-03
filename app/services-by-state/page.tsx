@@ -25,6 +25,13 @@ export default function ServicesByStatePage() {
       keywords: "HRT Arkansas, hormone therapy Arkansas, transgender healthcare Arkansas, HRT Little Rock",
     },
     {
+      name: "Florida",
+      slug: "florida",
+      description:
+        "Safe, affirming hormone replacement therapy for trans and gender divergent people across Florida. We serve Miami, Tampa, Orlando, Jacksonville, and all Florida communities through our secure telehealth platform.",
+      keywords: "HRT Florida, hormone therapy Florida, transgender healthcare Florida, HRT Miami",
+    },
+    {
       name: "Idaho",
       slug: "idaho",
       description:
@@ -37,6 +44,13 @@ export default function ServicesByStatePage() {
       description:
         "Professional hormone replacement therapy services for trans and gender divergent people across Indiana. We serve Indianapolis, Fort Wayne, Evansville, South Bend, and all Indiana communities with compassionate HRT care.",
       keywords: "HRT Indiana, hormone therapy Indiana, transgender healthcare Indiana, HRT Indianapolis",
+    },
+    {
+      name: "Iowa",
+      slug: "iowa",
+      description:
+        "Comprehensive hormone replacement therapy services for trans and gender divergent people throughout Iowa. We serve Des Moines, Cedar Rapids, Davenport, Sioux City, and all Iowa communities with affirming HRT care.",
+      keywords: "HRT Iowa, hormone therapy Iowa, transgender healthcare Iowa, HRT Des Moines",
     },
     {
       name: "Louisiana",
@@ -116,7 +130,7 @@ export default function ServicesByStatePage() {
             "@type": "MedicalWebPage",
             name: "HRT Services by State - Hormone Replacement Therapy",
             description:
-              "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people across Alabama, Arkansas, Idaho, Indiana, Louisiana, Maryland, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington DC, and West Virginia.",
+              "Comprehensive hormone replacement therapy (HRT) services for trans and gender divergent people across Alabama, Arkansas, Florida, Idaho, Indiana, Iowa, Louisiana, Maryland, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington DC, and West Virginia.",
             specialty: "Endocrinology",
             about: {
               "@type": "MedicalTherapy",
@@ -131,8 +145,10 @@ export default function ServicesByStatePage() {
             areaServed: [
               { "@type": "State", name: "Alabama" },
               { "@type": "State", name: "Arkansas" },
+              { "@type": "State", name: "Florida" },
               { "@type": "State", name: "Idaho" },
               { "@type": "State", name: "Indiana" },
+              { "@type": "State", name: "Iowa" },
               { "@type": "State", name: "Louisiana" },
               { "@type": "State", name: "Maryland" },
               { "@type": "State", name: "Missouri" },
@@ -167,9 +183,9 @@ export default function ServicesByStatePage() {
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl leading-relaxed">
                     Compassionate hormone replacement therapy for trans and gender divergent people in Alabama,
-                    Arkansas, Idaho, Indiana, Louisiana, Maryland, Missouri, Montana, North Dakota, Oklahoma, South
-                    Dakota, Washington DC, and West Virginia. Licensed healthcare providers delivering safe, affirming
-                    HRT through telemedicine.
+                    Arkansas, Florida, Idaho, Indiana, Iowa, Louisiana, Maryland, Missouri, Montana, North Dakota,
+                    Oklahoma, South Dakota, Washington DC, and West Virginia. Licensed healthcare providers delivering
+                    safe, affirming HRT through telemedicine.
                   </p>
                   <div className="flex items-center justify-center gap-2 pt-4">
                     <Phone className="h-5 w-5 text-blue-600" />

@@ -6,6 +6,8 @@ import Image from "next/image"
 import { Breadcrumbs } from "../components/breadcrumbs"
 import type { Metadata } from "next"
 
+export const revalidate = 86400 // 24 hours
+
 export const metadata: Metadata = {
   title: "About Us - Transnational Health",
   description:
@@ -40,6 +42,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://transnationalhealth.org/about",
+    languages: {
+      en: "https://transnationalhealth.org/about",
+    },
   },
 }
 
