@@ -1,116 +1,117 @@
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://transnationalHRT.org"
   const currentDate = new Date().toISOString()
 
   return [
     {
-      url: "/",
+      url: `${baseUrl}/`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 1.0,
       alternates: {
         languages: {
-          en: "/",
+          en: `${baseUrl}/`,
         },
       },
     },
     {
-      url: "/about",
+      url: `${baseUrl}/about`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.9,
       alternates: {
         languages: {
-          en: "/about",
+          en: `${baseUrl}/about`,
         },
       },
     },
     {
-      url: "/contact",
+      url: `${baseUrl}/contact`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.9,
       alternates: {
         languages: {
-          en: "/contact",
+          en: `${baseUrl}/contact`,
         },
       },
     },
     {
-      url: "/faq",
+      url: `${baseUrl}/faq`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
       alternates: {
         languages: {
-          en: "/faq",
+          en: `${baseUrl}/faq`,
         },
       },
     },
     {
-      url: "/how-it-works",
+      url: `${baseUrl}/how-it-works`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: {
         languages: {
-          en: "/how-it-works",
+          en: `${baseUrl}/how-it-works`,
         },
       },
     },
     {
-      url: "/partnerships",
+      url: `${baseUrl}/partnerships`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: {
         languages: {
-          en: "/partnerships",
+          en: `${baseUrl}/partnerships`,
         },
       },
     },
     {
-      url: "/services-by-state",
+      url: `${baseUrl}/services-by-state`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.9,
       alternates: {
         languages: {
-          en: "/services-by-state",
+          en: `${baseUrl}/services-by-state`,
         },
       },
     },
     {
-      url: "/testosterone-therapy",
+      url: `${baseUrl}/testosterone-therapy`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: {
         languages: {
-          en: "/testosterone-therapy",
+          en: `${baseUrl}/testosterone-therapy`,
         },
       },
     },
     {
-      url: "/menopause-hrt",
+      url: `${baseUrl}/menopause-hrt`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: {
         languages: {
-          en: "/menopause-hrt",
+          en: `${baseUrl}/menopause-hrt`,
         },
       },
     },
     {
-      url: "/form-complete",
+      url: `${baseUrl}/form-complete`,
       lastModified: currentDate,
       changeFrequency: "yearly",
       priority: 0.3,
       alternates: {
         languages: {
-          en: "/form-complete",
+          en: `${baseUrl}/form-complete`,
         },
       },
     },
