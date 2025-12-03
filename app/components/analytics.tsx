@@ -2,7 +2,6 @@
 
 import { useEffect } from "react"
 import { usePathname, useSearchParams } from "next/navigation"
-import { track } from "@vercel/analytics/react"
 
 declare global {
   interface Window {
@@ -94,31 +93,17 @@ export const trackPageView = (pageName: string) => {
   })
 }
 
-// Vercel Analytics tracking
-export const trackVercelEvent = (eventName: string, properties?: Record<string, any>) => {
-  if (typeof window !== "undefined") {
-    track(eventName, properties)
-  }
-}
-
 export const trackFormSubmissionVercel = (formName: string) => {
-  trackVercelEvent("form_submit", {
-    form_name: formName,
-    timestamp: new Date().toISOString(),
-  })
+  // Use Google Analytics tracking as fallback
+  trackFormSubmission(formName)
 }
 
 export const trackButtonClickVercel = (buttonName: string, location: string) => {
-  trackVercelEvent("button_click", {
-    button_name: buttonName,
-    location: location,
-    timestamp: new Date().toISOString(),
-  })
+  // Use Google Analytics tracking as fallback
+  trackButtonClick(buttonName, location)
 }
 
 export const trackPageViewVercel = (pageName: string) => {
-  trackVercelEvent("page_view", {
-    page_name: pageName,
-    timestamp: new Date().toISOString(),
-  })
+  // Use Google Analytics tracking as fallback
+  trackPageView(pageName)
 }
