@@ -28,7 +28,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://transnationalhealth.org"),
+  metadataBase: new URL("https://transnationalHRT.org"),
   title: {
     default: "Transnational Health - Compassionate HRT at Home",
     template: "%s | Transnational Health",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     "queer health",
     "trans folx",
   ],
-  authors: [{ name: "Transnational Health Corp", url: "https://transnationalhealth.org" }],
+  authors: [{ name: "Transnational Health Corp", url: "https://transnationalHRT.org" }],
   creator: "Transnational Health Corp",
   publisher: "Transnational Health Corp",
   applicationName: "Transnational Health",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://transnationalhealth.org",
+    url: "https://transnationalHRT.org",
     siteName: "Transnational Health",
     title: "Transnational Health - Compassionate HRT at Home",
     description:
@@ -147,10 +147,10 @@ export const metadata: Metadata = {
     google: "2AZZbdRNyCzj014R8NCeD_y4Z9fHLK5D4cc2SQ8A5c0",
   },
   alternates: {
-    canonical: "https://transnationalhealth.org",
+    canonical: "https://transnationalHRT.org",
     languages: {
-      en: "https://transnationalhealth.org",
-      "x-default": "https://transnationalhealth.org",
+      en: "https://transnationalHRT.org",
+      "x-default": "https://transnationalHRT.org",
     },
   },
   icons: {
@@ -179,26 +179,26 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalOrganization",
-  "@id": "https://transnationalhealth.org/#organization",
+  "@id": "https://transnationalHRT.org/#organization",
   name: "Transnational Health Corp",
   alternateName: "Transnational Health",
   description:
     "Nonprofit organization providing accessible, safe, affirming hormone replacement therapy (HRT) services for trans, nonbinary, and gender divergent folx through licensed healthcare providers. Offering testosterone, estrogen, and spironolactone therapy with compassionate, queer-affirming care.",
-  url: "https://transnationalhealth.org",
+  url: "https://transnationalHRT.org",
   logo: {
     "@type": "ImageObject",
-    url: "https://transnationalhealth.org/logo.jpg",
+    url: "https://transnationalHRT.org/logo.jpg",
     width: 400,
     height: 400,
   },
   image: {
     "@type": "ImageObject",
-    url: "https://transnationalhealth.org/logo.jpg",
+    url: "https://transnationalHRT.org/logo.jpg",
     width: 1200,
     height: 630,
   },
   telephone: "+1-XXX-XXX-XXXX",
-  email: "info@transnationalhealth.org",
+  email: "info@transnationalHRT.org",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Maryland",
@@ -247,7 +247,7 @@ const jsonLd = {
   ],
   potentialAction: {
     "@type": "ContactAction",
-    target: "https://transnationalhealth.org/#contact",
+    target: "https://transnationalHRT.org/#contact",
     name: "Contact Transnational Health",
   },
   hasOfferCatalog: {
@@ -290,25 +290,25 @@ const breadcrumbJsonLd = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://transnationalhealth.org",
+      item: "https://transnationalHRT.org",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Services",
-      item: "https://transnationalhealth.org/#services",
+      item: "https://transnationalHRT.org/#services",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "About",
-      item: "https://transnationalhealth.org/#about",
+      item: "https://transnationalHRT.org/#about",
     },
     {
       "@type": "ListItem",
       position: 4,
       name: "Contact",
-      item: "https://transnationalhealth.org/#contact",
+      item: "https://transnationalHRT.org/#contact",
     },
   ],
 }

@@ -38,12 +38,12 @@ export const metadata: Metadata = {
     title: "About Us - Transnational Health",
     description:
       "Learn about our nonprofit mission to provide accessible, affirming HRT services for trans and gender divergent people.",
-    url: "https://transnationalhealth.org/about",
+    url: "https://transnationalHRT.org/about",
   },
   alternates: {
-    canonical: "https://transnationalhealth.org/about",
+    canonical: "https://transnationalHRT.org/about",
     languages: {
-      en: "https://transnationalhealth.org/about",
+      en: "https://transnationalHRT.org/about",
     },
   },
 }

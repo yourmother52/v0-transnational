@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://transnationalhealth.org/sitemap.xml
+Sitemap: https://transnationalHRT.org/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

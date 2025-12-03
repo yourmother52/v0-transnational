@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     title: "Contact Us | Transnational Health",
     description:
       "Get in touch with Transnational Health Corp. We're here to answer your questions about our HRT services.",
-    url: "https://transnationalhealth.org/contact",
+    url: "https://transnationalHRT.org/contact",
   },
   alternates: {
-    canonical: "https://transnationalhealth.org/contact",
+    canonical: "https://transnationalHRT.org/contact",
     languages: {
-      en: "https://transnationalhealth.org/contact",
+      en: "https://transnationalHRT.org/contact",
     },
   },
 }

@@ -22,7 +22,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
   const baseUrl =
     typeof window !== "undefined"
       ? window.location.origin
-      : process.env.NEXT_PUBLIC_SITE_URL || "https://transnationalhealth.org"
+      : process.env.NEXT_PUBLIC_SITE_URL || "https://transnationalHRT.org"
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",

@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://transnationalhealth.org/partnerships",
+    canonical: "https://transnationalHRT.org/partnerships",
     languages: {
-      en: "https://transnationalhealth.org/partnerships",
+      en: "https://transnationalHRT.org/partnerships",
     },
   },
 }

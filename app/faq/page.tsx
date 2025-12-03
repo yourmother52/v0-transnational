@@ -38,12 +38,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FAQ - Transnational Health",
     description: "Get answers to your questions about our HRT services and process.",
-    url: "https://transnationalhealth.org/faq",
+    url: "https://transnationalHRT.org/faq",
   },
   alternates: {
-    canonical: "https://transnationalhealth.org/faq",
+    canonical: "https://transnationalHRT.org/faq",
     languages: {
-      en: "https://transnationalhealth.org/faq",
+      en: "https://transnationalHRT.org/faq",
     },
   },
 }
