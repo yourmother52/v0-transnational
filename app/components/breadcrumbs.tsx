@@ -19,6 +19,11 @@ interface BreadcrumbsProps {
 }
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
+  if (!items || !Array.isArray(items) || items.length === 0) {
+    console.error("[v0] Breadcrumbs: items is undefined or empty", items)
+    return null
+  }
+
   const baseUrl =
     typeof window !== "undefined"
       ? window.location.origin

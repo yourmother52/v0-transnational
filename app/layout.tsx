@@ -21,6 +21,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
+  colorScheme: "light",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#FF0000" },
     { media: "(prefers-color-scheme: dark)", color: "#FF0000" },
@@ -85,7 +86,6 @@ export const metadata: Metadata = {
   applicationName: "Transnational Health",
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
-  colorScheme: "light",
   classification: "Healthcare",
   category: "Healthcare",
   formatDetection: {
