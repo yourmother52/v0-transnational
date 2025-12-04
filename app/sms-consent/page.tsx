@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { Breadcrumbs } from "../components/breadcrumbs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle } from "lucide-react"
@@ -58,6 +59,20 @@ export default function SMSConsentPage() {
               </p>
             </div>
 
+            <div className="border rounded-lg overflow-hidden">
+              <Image
+                src="/images/screenshot-202025-12-04-20at-2000.png"
+                alt="Client information form showing the Appointment Reminder dropdown field with Text Message (SMS) selected"
+                width={1400}
+                height={800}
+                className="w-full h-auto"
+                priority
+              />
+              <p className="text-xs text-muted-foreground p-2 bg-muted">
+                Screenshot 1: Client information form with Appointment Reminder field
+              </p>
+            </div>
+
             <div className="bg-muted p-4 rounded-lg">
               <h4 className="font-semibold mb-2">Available Notification Options:</h4>
               <ul className="space-y-2 ml-4">
@@ -86,6 +101,19 @@ export default function SMSConsentPage() {
                   </span>
                 </li>
               </ul>
+            </div>
+
+            <div className="border rounded-lg overflow-hidden">
+              <Image
+                src="/images/screenshot-202025-12-04-20at-2000.png"
+                alt="Appointment Reminder dropdown menu expanded showing all four notification options: Email, Text Message (SMS), Phone Call, and Opt-out"
+                width={1400}
+                height={800}
+                className="w-full h-auto"
+              />
+              <p className="text-xs text-muted-foreground p-2 bg-muted">
+                Screenshot 2: Dropdown menu showing all available notification preference options
+              </p>
             </div>
 
             <div>
