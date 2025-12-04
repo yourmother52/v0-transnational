@@ -1,6 +1,8 @@
 import { type NextRequest, NextResponse } from "next/server"
+import sgMail from "@sendgrid/mail"
 
-// Simple contact form handler without external dependencies
+sgMail.setApiKey(process.env.SENDGRID_API_KEY || "")
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -28,18 +30,32 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Log the submission (in production, you'd save to database or send email)
-    console.log("Contact form submission:", {
-      firstName: body.firstName,
-      lastName: body.lastName,
-      email: body.email,
-      phone: body.phone || "Not provided",
-      message: body.message || "No message",
-      timestamp: new Date().toISOString(),
-    })
+    const msg = {
+      to: "hello@transnationalHRT.org",
+      from: process.env.SENDGRID_FROM_EMAIL || "contact@transnationalHRT.org",
+      replyTo: body.email,
+      subject: `Contact Form Submission from ${body.firstName} ${body.lastName}`,
+      text: `
+Name: ${body.firstName} ${body.lastName}
+Email: ${body.email}
+Phone: ${body.phone || "Not provided"}
+Message: ${body.message || "No message provided"}
 
-    // Simulate processing time
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+Submitted: ${new Date().toISOString()}
+      `,
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${body.firstName} ${body.lastName}</p>
+        <p><strong>Email:</strong> ${body.email}</p>
+        <p><strong>Phone:</strong> ${body.phone || "Not provided"}</p>
+        <p><strong>Message:</strong></p>
+        <p>${body.message || "No message provided"}</p>
+        <hr>
+        <p><small>Submitted: ${new Date().toISOString()}</small></p>
+      `,
+    }
+
+    await sgMail.send(msg)
 
     return NextResponse.json(
       {
@@ -54,7 +70,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         success: false,
-        error: "Internal server error. Please try again later.",
+        error: "Failed to send message. Please try again later.",
       },
       { status: 500 },
     )

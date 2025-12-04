@@ -106,8 +106,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900">Location</h3>
                       <p className="text-sm text-gray-600">
-                        <strong>States we serve:</strong> Alabama, Arkansas, Idaho, Indiana, Louisiana, Maryland,
-                        Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington DC, and West Virginia
+                        <strong>States we serve:</strong> Alabama, Arkansas, Florida, Idaho, Indiana, Iowa, Louisiana,
+                        Maryland, Missouri, Montana, North Dakota, Oklahoma, South Dakota, Washington DC, and West
+                        Virginia
                       </p>
                       <p className="text-sm text-gray-600 mt-1">All services provided through telemedicine</p>
                     </div>

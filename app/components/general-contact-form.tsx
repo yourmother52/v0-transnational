@@ -61,9 +61,19 @@ export function GeneralContactForm({
         trackFormSubmission(formType)
         trackFormSubmissionVercel(formType)
 
-        // For now, simulate a successful submission
-        // In production, you would call your API endpoint
-        await new Promise((resolve) => setTimeout(resolve, 1000))
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        })
+
+        const data = await response.json()
+
+        if (!response.ok || !data.success) {
+          throw new Error(data.error || "Failed to submit form")
+        }
 
         setFormState({
           success: true,
@@ -83,7 +93,7 @@ export function GeneralContactForm({
         console.error("Form submission error:", error)
         setFormState({
           success: false,
-          error: "Something went wrong. Please try again.",
+          error: error instanceof Error ? error.message : "Something went wrong. Please try again.",
           message: "",
         })
       }

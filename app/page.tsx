@@ -68,9 +68,9 @@ export default function HomePage() {
                     <span className="text-brand-red">Groove is in the HRT!</span>
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
-                    Improving access to HRT services through partnership with health care providers.
+                    Providing access to HRT via licensed healthcare providers.
                     <br />
-                    HRT @ home starts here.
+                    Your journey to getting HRT@home starts now.
                   </p>
                 </div>
                 <div className="space-x-4">
